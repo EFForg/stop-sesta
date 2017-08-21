@@ -1,0 +1,22 @@
+{
+  "name": "right-to-connect",
+  "version": "1.0.0",
+  "description": "Right to Connect",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -f static/*.js static/*.css",
+    "sass:build": "node-sass sass/main.scss static/site.css",
+    "sass:watch": "onchange 'sass/*.scss*' -- npm run sass:build",
+    "build:assets": "npm run clean && npm run sass:build",
+    "build": "npm run build:assets && hugo",
+    "start": "npm run build:assets && parallelshell 'npm run sass:watch' 'hugo serve'"
+  },
+  "author": "Electronic Frontier Foundation",
+  "repository": "https://github.com/EFForg/right-to-connect",
+  "devDependencies": {
+    "autoprefixer": "^7.1.2",
+    "node-sass": "^4.5.3",
+    "onchange": "^3.2.1",
+    "parallelshell": "^3.0.1"
+  }
+}
