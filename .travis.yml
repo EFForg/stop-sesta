@@ -1,0 +1,20 @@
+language: node_js
+addons:
+  apt:
+    packages:
+      - hugo
+
+cache:
+  directories:
+    - "node_modules"
+
+script: npm build
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: public
+  target_branch: build
+  on:
+    branch: master

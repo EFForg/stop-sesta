@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Right to Connect",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -f static/*.js static/*.css",
     "sass:build": "node-sass sass/main.scss static/site.css",
     "sass:watch": "onchange 'sass/*.scss*' -- npm run sass:build",
