@@ -1,0 +1,10 @@
+logos:
+  - name: Electronic Frontier Foundation
+    url: https://eff.org
+    logo: eff-logo-stack-black.svg
+  - name: Another Org
+    url: https://google.com
+    logo: anotherorg.png
+  - name: A Third Thing
+    url: https://google.com
+    logo: thing3.png
