@@ -4,7 +4,7 @@
   "description": "Right to Connect",
   "scripts": {
     "clean": "rm -f static/*.js static/*.css",
-    "sass:build": "node-sass sass/main.scss static/site.css",
+    "sass:build": "node-sass sass/main.scss static/site.css && cp static/site.css layouts/partials/ac_embed_styles.html",
     "sass:watch": "onchange 'sass/*.scss*' -- npm run sass:build",
     "build:assets": "npm run clean && npm run sass:build",
     "build": "npm run build:assets && hugo",

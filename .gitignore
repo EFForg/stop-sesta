@@ -1,3 +1,6 @@
 node_modules
-static/*
 public
+
+# built by node-sass
+layouts/partials/ac_embed_styles.html
+static/*.css

@@ -2,29 +2,24 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>{{ block "title" . }}
+    <title>
       {{ .Site.Title }}
-    {{ end }}</title>
+    </title>
 
     <link rel="stylesheet" type="text/css" href="site.css" />
 
     <script type="text/javascript">
         var ac_embed = {};
-        ac_embed.css_content = "#some_elem";
-    </script>
-    <script id="some_elem" type="text/x-css-content">
-      body {
-        background-color: green;
-      }
-
-      .tool-container {
-        background-color: pink;
-      }
+        ac_embed.css_content = "#ac_embed_styles";
     </script>
     <script type="text/javascript" src="https://act.eff.org/action/embed"></script>
   </head>
 
   <body>
     {{ block "main" . }}{{ end }}
+
+    <script id="ac_embed_styles" type="text/x-css-content">
+      {{ partial "ac_embed_styles" . }}
+    </script>
   </body>
 </html>
