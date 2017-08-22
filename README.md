@@ -1,7 +1,8 @@
 ## Install
 
 1. Install Hugo
-  * `apt install hugo` on Ubuntu or `brew install hugo` on macOS.
+  * On macOS: `brew install hugo`
+  * On Linux: install the [cross platform binary](https://gohugo.io/getting-started/installing/#quick-install) to get the latest version.
   * Verify your installation by running `hugo version`.
 2. Install Node and npm
   * ex. `brew install node` on macOS.
