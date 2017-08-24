@@ -13,3 +13,20 @@
 
 1. `npm start` to start the local server.
 2. Visit `localhost:1313` in your browser.
+
+## Editing the site
+
+### Most of the HTML
+The main site template is located at `layout/index.html`. It pulls in some partials from `layout/partials`.
+
+### Logos
+To add a logo:
+
+1. Add it to `static/images/logos`.
+2. Add a new entry to `data/logos` with the filename, org name, and org site url.
+
+### Sass
+The sass is located in the `sass` directory`. Compiled goes in two places:
+
+1. The `static/css` directory, which gets added directly to the site.
+2. The `layouts/partials/ac_embed_styles.html` file. This is a little hack to let us inject the styles into the action center widget so we can style it more easily.
