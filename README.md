@@ -26,7 +26,7 @@ To add a logo:
 2. Add a new entry to `data/logos` with the filename, org name, and org site url.
 
 ### Sass
-The sass is located in the `sass` directory`. Compiled goes in two places:
+The sass is located in the `sass` directory. Compiled sass goes in two places:
 
 1. The `static/css` directory, which gets added directly to the site.
 2. The `layouts/partials/ac_embed_styles.html` file. This is a little hack to let us inject the styles into the action center widget so we can style it more easily.
