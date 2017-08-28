@@ -30,3 +30,6 @@ The sass is located in the `sass` directory. Compiled sass goes in two places:
 
 1. The `static/css` directory, which gets added directly to the site.
 2. The `layouts/partials/ac_embed_styles.html` file. This is a little hack to let us inject the styles into the action center widget so we can style it more easily.
+
+## Static assets
+Static assets such as images and font files can be added to the `static` directory. They will be included in the public folder when the site is built.  
