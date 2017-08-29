@@ -1,11 +1,11 @@
-<div class="content-section logo-section">
+<div class="content-section logo-section" id="who-we-are">
 
 <h2>Who We Are</h2>
 <ul>
 {{ range $.Site.Data.logos.logos }}
   <li>
     <a href="{{ .url }}">
-      <img src="/images/logos/{{ .logo }}" alt="{{ .name }}">
+      <img src="images/logos/{{ .logo }}" alt="{{ .name }}">
     </a>
   </li>
 {{ end }}
