@@ -118,50 +118,50 @@
   font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
-  src: local("Lato Light"), local("Lato-Light"), url(../fonts/Lato-Light.woff) format("woff"); }
+  src: local("Lato Light"), local("Lato-Light"), url(fonts/Lato-Light.woff) format("woff"); }
 
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
-  src: local("Lato Regular"), local("Lato-Regular"), url(../fonts/Lato-Regular.woff) format("woff"); }
+  src: local("Lato Regular"), local("Lato-Regular"), url(fonts/Lato-Regular.woff) format("woff"); }
 
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
-  src: local("Lato Bold"), local("Lato-Bold"), url(../fonts/Lato-Bold.woff) format("woff"); }
+  src: local("Lato Bold"), local("Lato-Bold"), url(fonts/Lato-Bold.woff) format("woff"); }
 
 @font-face {
   font-family: 'Lato';
   font-style: italic;
   font-weight: 400;
-  src: local("Lato Italic"), local("Lato-Italic"), url(../fonts/Lato-Italic.woff) format("woff"); }
+  src: local("Lato Italic"), local("Lato-Italic"), url(fonts/Lato-Italic.woff) format("woff"); }
 
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 900;
-  src: local("Lato Black"), local("Lato-Black"), url(../fonts/Lato-Black.woff) format("woff"); }
+  src: local("Lato Black"), local("Lato-Black"), url(fonts/Lato-Black.woff) format("woff"); }
 
 /* Montserrat */
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  src: local("Montserrat Regular"), local("Montserrat-Regular"), url(../fonts/Montserrat-Regular.woff) format("woff"); }
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url(fonts/Montserrat-Regular.woff) format("woff"); }
 
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 900;
-  src: local("Montserrat Black"), local("Montserrat-Black"), url(../fonts/Montserrat-Black.woff) format("woff"); }
+  src: local("Montserrat Black"), local("Montserrat-Black"), url(fonts/Montserrat-Black.woff) format("woff"); }
 
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  src: local("Montserrat Bold"), local("Montserrat-Bold"), url(../fonts/Montserrat-Bold.woff) format("woff"); }
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url(fonts/Montserrat-Bold.woff) format("woff"); }
 
 /* Links */
 a,
