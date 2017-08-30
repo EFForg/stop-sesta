@@ -113,37 +113,6 @@
 /*
  * Globals
  */
-/* Lato */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 300;
-  src: local("Lato Light"), local("Lato-Light"), url(fonts/Lato-Light.woff) format("woff"); }
-
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Lato Regular"), local("Lato-Regular"), url(fonts/Lato-Regular.woff) format("woff"); }
-
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local("Lato Bold"), local("Lato-Bold"), url(fonts/Lato-Bold.woff) format("woff"); }
-
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 400;
-  src: local("Lato Italic"), local("Lato-Italic"), url(fonts/Lato-Italic.woff) format("woff"); }
-
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 900;
-  src: local("Lato Black"), local("Lato-Black"), url(fonts/Lato-Black.woff) format("woff"); }
-
 /* Montserrat */
 @font-face {
   font-family: 'Montserrat';
@@ -185,7 +154,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  font-family: 'Lato', sans-serif; }
+  font-family: 'Montserrat', sans-serif; }
 
 body {
   color: #151515;
@@ -219,25 +188,25 @@ body {
   background-color: #000;
   font-size: 17px; }
 
-.action-section .connect, .button {
+.button {
   text-decoration: none;
   font-weight: 400;
-  font-family: 'Lato';
-  letter-spacing: 0.2em;
+  font-family: 'Montserrat';
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   border: 3px solid #cc0000;
-  padding: 1em 0em 0.9em 0em;
+  padding: 2px 15px;
   font-weight: bold;
   border-radius: 6px;
   margin-top: 2em;
-  background-color: #cc0000;
+  background-color: transparent;
   outline: 0;
   width: 84%;
-  color: #fcfcfc; }
-  .action-section .connect:hover, .button:hover {
-    background-color: #950002;
+  color: #cc0000; }
+  .button:hover {
+    background-color: transparent;
     border: 3px solid #950002;
-    color: #fcfcfc; }
+    color: #950002; }
 
 h2 {
   font-weight: 400;
@@ -248,115 +217,6 @@ h2 {
     h2 {
       font-size: 4em; } }
 
-/*
- * Call section
- */
-.action-section {
-  padding: 60px 0 80px 0; }
-  .action-section h1, .action-section h2 {
-    padding: 0;
-    margin: 0; }
-  .action-section h1 {
-    color: #cc0000;
-    text-shadow: none;
-    font-family: Montserrat;
-    font-weight: 900; }
-  .action-section h2 {
-    margin-bottom: 1em;
-    font-weight: 300; }
-  .action-section .connect {
-    color: #fcfcfc;
-    margin-top: 0.5em; }
-
-#call-script {
-  background-color: #fff;
-  text-shadow: none;
-  color: #000;
-  font-size: 18px;
-  padding: 1em 2em 2em 2em;
-  font-weight: 300;
-  text-align: left;
-  margin-top: 20px;
-  box-sizing: border-box; }
-  #call-script h5 {
-    text-align: left;
-    color: #00a9e7;
-    text-transform: uppercase;
-    font-size: 18px;
-    margin-top: 0.5em;
-    padding: 0;
-    font-weight: 700;
-    letter-spacing: 0.05em; }
-
-#tf-call-widget-form {
-  text-align: center;
-  padding-top: 10px; }
-  @media (min-width: 768px) {
-    #tf-call-widget-form {
-      padding-left: 10px; } }
-  #tf-call-widget-form h5 {
-    text-transform: uppercase;
-    font-size: 14px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-top: 2.5em;
-    font-family: 'Lato';
-    font-weight: 400;
-    font-style: normal;
-    text-align: left;
-    margin-left: 8%;
-    letter-spacing: 0.12em;
-    line-height: 18px;
-    width: 84%; }
-  #tf-call-widget-form label {
-    font-size: 16px; }
-  #tf-call-widget-form .privacy-info {
-    text-align: center;
-    font-weight: 300;
-    font-size: 0.9em;
-    margin-top: -1.2em; }
-  #tf-call-widget-form h6 {
-    margin-top: 1em;
-    font-size: 1.4em;
-    font-weight: 400;
-    letter-spacing: 0.02em;
-    font-style: italic; }
-    #tf-call-widget-form h6 a:hover {
-      text-decoration: underline; }
-  #tf-call-widget-form .input-lg {
-    margin: 0 auto;
-    font-family: 'Lato';
-    font-weight: 300;
-    font-size: 22px;
-    background: rgba(255, 255, 255, 0.25);
-    color: #fff;
-    outline: 0;
-    border: 0;
-    -webkit-appearance: none;
-    border-radius: 0;
-    border-bottom: 4px solid #fff;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    text-align: left;
-    width: 84%; }
-    #tf-call-widget-form .input-lg:focus {
-      outline: 0;
-      -webkit-box-shadow: none;
-      -moz-box-shadow: none;
-      box-shadow: none; }
-  #tf-call-widget-form ::-webkit-input-placeholder {
-    color: #fff; }
-  #tf-call-widget-form ::-moz-placeholder {
-    color: #fff; }
-  #tf-call-widget-form :-ms-input-placeholder {
-    color: #fff; }
-  #tf-call-widget-form input:-moz-placeholder {
-    color: #fff; }
-
-/*
- * Background section
- */
 .header-info {
   background-color: #00a9e7; }
   .header-info img {
@@ -413,8 +273,7 @@ h2 {
     width: 50%;
     min-width: 14em; }
     .content-section .action-button a {
-      text-decoration: none;
-      padding: 15px; }
+      text-decoration: none; }
       @media (min-width: 768px) {
         .content-section .action-button a {
           font-size: 1.2em; } }
@@ -455,7 +314,7 @@ h2 {
   padding-bottom: 40px;
   text-align: center; }
   .quote-section div div div {
-    margin-bottom: 3em; }
+    margin-bottom: 4em; }
     .quote-section div div div:first-of-type {
       margin-top: 60px; }
     .quote-section div div div a {
