@@ -1,10 +1,10 @@
-$black: #151515;
-$blue: #007eff;
+$black: #000;
+$blue: #00a9e7;
 $dark-red: #017e00;
-$red: #8aeb00;
 $red: #cc0000;
 $dark-red: #950002;
 $white: #fcfcfc;
+$yellow: #ffd100;
 
 $trans-blue: rgba(0,126,255,0.6);
 $footer-color: #000;
@@ -177,9 +177,9 @@ h2 {
   font-weight: 400;
   letter-spacing: 0.01em;
   font-style: normal;
-  font-size: 1.9em;
+  font-size: 1.95em;
   @include breakpoint($medium) {
-    font-size: 2.65em;
+    font-size: 4em;
   }
 
 }
@@ -321,8 +321,10 @@ h2 {
  * Background section
  */
 .header-info {
-  padding-top: 3em;
-  position: relative;
+  background-color: $blue;
+  img {
+    display: inline-block;
+  }
   .action-button {
     padding: 50px 0 40px 0;
     width: 50%;
@@ -378,8 +380,8 @@ h2 {
  * Background section
  */
 .content-section {
-  padding-top: 3em;
-  position: relative;
+  padding: 3em 0;
+  overflow-x: hidden;
   .action-button {
     padding: 50px 0 40px 0;
     width: 50%;
@@ -418,6 +420,11 @@ h2 {
           padding: 0;
           }
       }
+  }
+  .white-box {
+    padding: 2em 2em 1em;
+    background-color: $white;
+    text-align: left;
   }
 }
 
@@ -524,7 +531,6 @@ h2 {
 // logo section
 
 .logo-section {
-  padding: 80px 20px;
   img {
     width: 200px;
     height: auto;
@@ -559,7 +565,7 @@ h2 {
   }
 
   a {
-    color: #dark-green;
+    margin: 0 10px;
   }
   a:hover {
     text-decoration: underline;
@@ -647,7 +653,26 @@ p.letter {
 .action-button {
   min-width: 270px !important;
   margin: 0 auto !important;
+  text-align: center;
 }
 p.tagline {
   text-align: center;
 }
+.bg-yellow {
+  background-color: $yellow;
+  h2 {
+    color: $white;
+  }
+}
+.bg-blue {
+  background-color: $blue;
+  h2 {
+    color: $white;
+  }
+}
+.bg-black {
+    background-color: $black;
+    h2 {
+      color: $blue;
+    }
+  }
