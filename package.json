@@ -10,7 +10,7 @@
     "sass:watch": "onchange 'sass/*.scss*' -- npm run sass:build",
     "build:assets": "npm run clean && npm run sass:build",
     "build": "npm run build:assets && hugo",
-    "start": "npm run build:assets && parallelshell 'npm run sass:watch' 'hugo serve'"
+    "start": "npm run build:assets && parallelshell 'npm run sass:watch' 'hugo serve --renderToDisk'"
   },
   "author": "Electronic Frontier Foundation",
   "repository": "https://github.com/EFForg/right-to-connect",
