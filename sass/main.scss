@@ -119,22 +119,21 @@ body {
   text-decoration: none;
   font-weight: 400;
   font-family: 'Montserrat';
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   border: 3px solid #{$red};
-  padding: 1em 0em 0.9em 0em;
-  //font-size: 1.2em;
+  padding: 2px 15px;
   font-weight: bold;
   border-radius: 6px;
   margin-top: 2em;
-  background-color: $red;
+  background-color: transparent;
   outline: 0;
   width: 84%;
-  color: $white;
+  color: $red;
   &:hover {
-    background-color: $dark-red;
+    background-color: transparent;
     border: 3px solid #{$dark-red};
-    color: $white;
+    color: $dark-red;
   }
 }
 
@@ -216,7 +215,6 @@ h2 {
     min-width: 14em;
       a {
         text-decoration: none;
-        padding: 15px;
           @include breakpoint($medium) {
             font-size: 1.2em;
           }

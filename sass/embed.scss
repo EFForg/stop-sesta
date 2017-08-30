@@ -1,7 +1,125 @@
-#tools .tool {
-  border: none;
-  box-shadow: none;
+
+/* Montserrat */
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(fonts/Montserrat-Regular.woff) format('woff');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Montserrat Black'), local('Montserrat-Black'), url(fonts/Montserrat-Black.woff) format('woff');
+}
+
+
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(fonts/Montserrat-Bold.woff) format('woff');
+}
+
+#tools {
+  margin-top: 0;
+  h2.tool-title {
+    display: none;
+  }
+  .congress-message-rep-lookup #lookup-address .form-group {
+    margin-bottom: 20px;
+  }
+ .tool {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+  }
+  #congress-message-tool {
+    h3 em {
+      background-color: transparent;
+      text-transform: uppercase;
+      color: black;
+      font-weight: 700;
+    }
+    h3.privacy-notice-header em {
+      font-weight: bold;
+      font-size: 11px;
+    }
+  }
+}
+
+.description h3:before,
+h3.privacy-notice-header:before,
+h3.header:before,
+#tools #email-tool h3:before,
+#tools #congress-message-tool h3:before {
+  border-bottom: none;
 }
 body.action_page-embed_iframe {
   background-color: transparent;
+}
+
+#tools #congress-message-tool textarea {
+  font-weight: normal;
+  padding: 1em;
+}
+#tools #congress-message-tool h3 span.customize-message-popover,
+h3.privacy-notice-header span.privacy-notice-popover {
+  background-color: transparent;
+}
+#tools #congress-message-tool .form-group .form-control {
+  border: none;
+  font-size: 0.9em;
+}
+#tools #congress-message-tool .campaign-message {
+  font-size: 0.7em;
+}
+#tools #congress-message-tool .privacy-notice {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 11px;
+}
+#tools #congress-message-tool input.action {
+  text-decoration: none;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border: 3px solid #cc0000;
+  padding: 2px 15px;
+  font-weight: bold;
+  border-radius: 6px;
+  margin-top: 2em;
+  background-color: transparent;
+  outline: 0;
+  color: #cc0000;
+  width: 86%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  &:hover {
+    background-color: transparent;
+    border: 3px solid #cc0000;
+    color:  #cc0000;
+  }
+}
+
+@media (max-width: 767px) {
+  #tools .tool .tool-body {
+    position: relative;
+  }
+  #tools .tool form {
+      margin-left: 55%;
+      width: 46%;
+    #customize-message {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 50%;
+      textarea {
+        min-height: 400px;
+      }
+    }
+  }
 }
