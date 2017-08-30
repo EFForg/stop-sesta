@@ -22,39 +22,6 @@ $cone-angle: 40;
  * Globals
  */
 
-/* Lato */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Lato Light'), local('Lato-Light'), url(fonts/Lato-Light.woff) format('woff');
-}
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(fonts/Lato-Regular.woff) format('woff');
-}
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(fonts/Lato-Bold.woff) format('woff');
-}
-
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(fonts/Lato-Italic.woff) format('woff');
-}
-
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 900;
-  src: local('Lato Black'), local('Lato-Black'), url(fonts/Lato-Black.woff) format('woff');
-}
 
 /* Montserrat */
 
@@ -82,8 +49,6 @@ $cone-angle: 40;
 
 
 
-
-
 /* Links */
 a,
 a:focus,
@@ -107,7 +72,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 body {
   color: #151515;
@@ -153,7 +118,7 @@ body {
   %button, .button {
   text-decoration: none;
   font-weight: 400;
-  font-family: 'Lato';
+  font-family: 'Montserrat';
   letter-spacing: 0.2em;
   text-transform: uppercase;
   border: 3px solid #{$red};
@@ -181,145 +146,8 @@ h2 {
   @include breakpoint($medium) {
     font-size: 4em;
   }
-
 }
 
-
-/*
- * Call section
- */
-
-.action-section  {
-  padding: 60px 0 80px 0;
-
-  h1, h2 {
-    padding: 0;
-    margin: 0;
-  }
-  h1 {
-    color: $red;
-    text-shadow: none;
-    font-family: Montserrat;
-    font-weight: 900;
-  }
-  h2 {
-    margin-bottom: 1em;
-    font-weight: 300;
-  }
-
-  .connect {
-    color: $white;
-    @extend %button;
-    margin-top: 0.5em;
-
-  }
-}
-#call-script {
-  background-color: #fff;
-  text-shadow: none;
-  color: $black;
-  font-size: 18px;
-  padding: 1em 2em 2em 2em;
-  font-weight: 300;
-  text-align: left;
-  //box-shadow: 0px 0px 50px rgba(0,0,0,0.7);
-  margin-top: 20px;
-  box-sizing: border-box;
-
-  h5 {
-    text-align: left;
-    color: $blue;
-    text-transform: uppercase;
-    font-size: 18px;
-    margin-top: 0.5em;
-    padding: 0;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-  }
-}
-#tf-call-widget-form {
-  text-align:center;
-  //padding-left: 10px;
-  @include breakpoint($medium) {
-    padding-left: 10px;
-  }
-  padding-top: 10px;
-  h5 {
-    text-transform: uppercase;
-    font-size: 14px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-top: 2.5em;
-    font-family: 'Lato';
-    font-weight: 400;
-    font-style: normal;
-    text-align: left;
-    margin-left: 8%;
-    letter-spacing: 0.12em;
-    line-height: 18px;
-    width: 84%;
-    //margin-right: -2%;
-  }
-  label {
-    font-size: 16px;
-  }
-  .privacy-info {
-    text-align: center;
-    font-weight: 300;
-    font-size: 0.9em;
-    margin-top: -1.2em;
-  }
-  h6 {
-    margin-top: 1em;
-    font-size: 1.4em;
-    font-weight: 400;
-    letter-spacing: 0.02em;
-    font-style: italic;
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-  }
-
-
-
-  .input-lg {
-    margin: 0 auto;
-    font-family: 'Lato';
-    font-weight: 300;
-    font-size: 22px;
-    background: rgba(255,255,255,0.25);
-    color: #fff;
-    outline: 0;
-    border: 0;
-    -webkit-appearance: none;
-    border-radius: 0;
-    border-bottom: 4px solid #fff;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    text-align: left;
-    width: 84%;
-    //text-align: center;
-    &:focus {
-      outline: 0;
-      -webkit-box-shadow: none;
-      -moz-box-shadow: none;
-      box-shadow: none;
-    }
-
-  }
-  ::-webkit-input-placeholder { color:#fff; }
-  ::-moz-placeholder { color:#fff; }
-  :-ms-input-placeholder { color:#fff; }
-  input:-moz-placeholder { color:#fff; }
-
-}
-
-/*
- * Background section
- */
 .header-info {
   background-color: $blue;
   img {
@@ -441,7 +269,7 @@ h2 {
   padding-bottom: 40px;
   text-align: center;
   div div div { // quotes
-    margin-bottom: 3em;
+    margin-bottom: 4em;
     &:first-of-type {
       margin-top: 60px;
     }
