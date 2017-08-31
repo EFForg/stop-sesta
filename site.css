@@ -136,7 +136,7 @@
 a,
 a:focus,
 a:hover {
-  color: #950002; }
+  color: #ff0000; }
 
 /* Custom default button */
 .btn-default,
@@ -163,11 +163,15 @@ body {
 /*
  * Navbar
  */
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  background-color: #000; }
+
 .navbar-inverse.visible {
   opacity: 1; }
 
 .navbar-inverse {
-  display: none; }
+  display: none;
+  background-color: #000; }
 
 .nav > li > a {
   letter-spacing: 0.1em;
@@ -184,7 +188,7 @@ body {
   font-weight: 700; }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > li > a {
-  color: #cc0000;
+  color: #00a9e7;
   background-color: #000;
   font-size: 17px; }
 
@@ -194,7 +198,7 @@ body {
   font-family: 'Montserrat';
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  border: 3px solid #cc0000;
+  border: 3px solid #ff0000;
   padding: 2px 15px;
   font-weight: bold;
   border-radius: 6px;
@@ -202,11 +206,11 @@ body {
   background-color: transparent;
   outline: 0;
   width: 84%;
-  color: #cc0000; }
+  color: #ff0000; }
   .button:hover {
-    background-color: transparent;
-    border: 3px solid #950002;
-    color: #950002; }
+    background-color: #ff0000;
+    border: 3px solid #ff0000;
+    color: #ffffff; }
 
 h2 {
   font-weight: 400;
@@ -220,7 +224,9 @@ h2 {
 .header-info {
   background-color: #00a9e7; }
   .header-info img {
-    display: inline-block; }
+    display: inline-block;
+    position: relative;
+    left: -60px; }
   .header-info .action-button {
     padding: 50px 0 40px 0;
     width: 50%;
@@ -246,7 +252,7 @@ h2 {
   .header-info b {
     font-weight: 900; }
   .header-info h1 {
-    color: #cc0000;
+    color: #ff0000;
     text-shadow: none;
     font-family: Montserrat;
     font-weight: 900;
@@ -254,7 +260,7 @@ h2 {
     text-transform: uppercase; }
     @media (min-width: 992px) {
       .header-info h1 {
-        color: #cc0000; } }
+        color: #ff0000; } }
 
 @media (min-width: 768px) and (min-width: 992px) {
   .header-info h1 {
@@ -266,7 +272,7 @@ h2 {
  * Background section
  */
 .content-section {
-  padding: 3em 0;
+  padding: 2em 0;
   overflow-x: hidden; }
   .content-section .action-button {
     padding: 50px 0 40px 0;
@@ -294,14 +300,16 @@ h2 {
     text-shadow: none;
     font-family: Montserrat;
     font-weight: 900;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin: 10px 0; }
 
 @media (min-width: 768px) and (min-width: 992px) {
   .content-section h2 {
     padding: 0; } }
   .content-section .white-box {
+    margin: 2em 0;
     padding: 2em 2em 1em;
-    background-color: #fcfcfc;
+    background-color: #ffffff;
     text-align: left; }
 
 .action-embed iframe {
@@ -314,12 +322,12 @@ h2 {
   padding-bottom: 40px;
   text-align: center; }
   .quote-section div div div {
-    margin-bottom: 4em; }
+    margin-bottom: 8em; }
     .quote-section div div div:first-of-type {
       margin-top: 60px; }
     .quote-section div div div a {
       float: right;
-      color: #fcfcfc;
+      color: #ffffff;
       text-transform: uppercase;
       font-weight: 400;
       letter-spacing: 0.15em;
@@ -335,7 +343,7 @@ h2 {
 .tweet-section {
   background: #fff;
   position: relative;
-  background: #cc0000;
+  background: #ff0000;
   padding-top: 30px;
   padding-bottom: 40px;
   color: #000; }
@@ -375,6 +383,12 @@ h2 {
   width: 200px;
   height: auto;
   padding: 1em; }
+
+.logo-section .eff-logo {
+  display: block; }
+
+.logo-section .eff-logo img {
+  width: 400px; }
 
 .logo-section ul li {
   list-style: none; }
@@ -450,9 +464,6 @@ h1 {
   font-family: 'Montserrat';
   font-weight: 900; }
 
-.quote-section div a {
-  color: #233d23 !important; }
-
 p.letter {
   text-align: center; }
 
@@ -467,14 +478,18 @@ p.tagline {
 .bg-yellow {
   background-color: #ffd100; }
   .bg-yellow h2 {
-    color: #fcfcfc; }
+    color: #ffffff; }
 
 .bg-blue {
   background-color: #00a9e7; }
   .bg-blue h2 {
-    color: #fcfcfc; }
+    color: #ffffff;
+    margin-top: 30px;
+    text-align: center; }
 
 .bg-black {
   background-color: #000; }
   .bg-black h2 {
     color: #00a9e7; }
+  .bg-black a {
+    color: black; }
