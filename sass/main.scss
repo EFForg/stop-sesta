@@ -369,6 +369,12 @@ h2 {
     height: auto;
     padding: 1em;
   }
+  .eff-logo {
+    display: block;
+  }
+  .eff-logo img {
+      width: 400px;
+  }
   ul li {
     list-style: none;
   }
@@ -506,5 +512,8 @@ p.tagline {
     background-color: $black;
     h2 {
       color: $blue;
+    }
+    a {
+      color: black;
     }
   }

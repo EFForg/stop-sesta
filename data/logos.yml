@@ -1,4 +1,35 @@
 logos:
   - name: Electronic Frontier Foundation
     url: https://eff.org
-    logo: eff-logo-stack-black.svg
+    logo: EFF-wide.png
+    class: eff-logo
+  - name: Center for Democracy & Technology
+    url: https://eff.org
+    logo: cdt.png
+  - name: Electronic Frontier Foundation
+    url: https://eff.org
+    logo: defending.png
+  - name: Electronic Frontier Foundation
+    url: https://eff.org
+    logo: fight.png
+  - name: Electronic Frontier Foundation
+    url: https://eff.org
+    logo: freedom-of-the-press.png
+  - name: Electronic Frontier Foundation
+    url: https://eff.org
+    logo: internet.png
+  - name: Electronic Frontier Foundation
+    url: https://eff.org
+    logo: restore.png
+  - name: Electronic Frontier Foundation
+    url: https://eff.org
+    logo: roots.png
+  - name: Electronic Frontier Foundation
+    url: https://eff.org
+    logo: rstreet.png
+  - name: Electronic Frontier Foundation
+    url: https://eff.org
+    logo: woodhull.png
+  - name: Electronic Frontier Foundation
+    url: https://eff.org
+    logo: x.png

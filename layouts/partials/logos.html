@@ -1,14 +1,13 @@
 <div class="content-section logo-section bg-black" id="who-we-are">
 
 <h2>Who We Are</h2>
-<ul>
+
 {{ range $.Site.Data.logos.logos }}
-  <li>
-    <a href="{{ .url }}">
+
+    <a href="{{ .url }}" class="{{ .class }}">
       <img src="images/logos/{{ .logo }}" alt="{{ .name }}">
-    </a>
-  </li>
+
 {{ end }}
-</ul>
+
 
 </div>
