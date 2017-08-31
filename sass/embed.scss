@@ -60,6 +60,7 @@
   #congress-message-tool textarea {
     font-weight: normal;
     padding: 1em;
+    font-size: 1em;
   }
   #congress-message-tool h3 span.customize-message-popover,
   h3.privacy-notice-header span.privacy-notice-popover {
@@ -67,9 +68,6 @@
   }
   #congress-message-tool .form-group .form-control {
     border: none;
-  }
-  #congress-message-tool .campaign-message {
-    font-size: 0.7em;
   }
   #congress-message-tool .privacy-notice {
     text-transform: uppercase;
