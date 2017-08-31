@@ -1,9 +1,9 @@
 $black: #000;
 $blue: #00a9e7;
 $dark-red: #017e00;
-$red: #cc0000;
+$red: #ff0000;
 $dark-red: #950002;
-$white: #fcfcfc;
+$white: #ffffff;
 $yellow: #ffd100;
 
 $trans-blue: rgba(0,126,255,0.6);
@@ -53,7 +53,7 @@ $cone-angle: 40;
 a,
 a:focus,
 a:hover {
-  color: $dark-red;
+  color: $red;
 }
 
 /* Custom default button */
@@ -84,12 +84,15 @@ body {
 /*
  * Navbar
  */
-
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  background-color: #000;
+}
  .navbar-inverse.visible {
   opacity: 1;
  }
  .navbar-inverse {
    display: none;
+   background-color: #000;
  }
 
 .nav>li>a {
@@ -107,7 +110,7 @@ body {
   font-weight: 700;
 }
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>li>a {
-  color: $red;
+  color: $blue;
   background-color: #000;
   font-size: 17px;
 }
@@ -131,9 +134,9 @@ body {
   width: 84%;
   color: $red;
   &:hover {
-    background-color: transparent;
-    border: 3px solid #{$dark-red};
-    color: $dark-red;
+    background-color: $red;
+    border: 3px solid #{$red};
+    color: $white;
   }
 }
 
@@ -151,6 +154,8 @@ h2 {
   background-color: $blue;
   img {
     display: inline-block;
+    position: relative;
+    left: -60px;
   }
   .action-button {
     padding: 50px 0 40px 0;
@@ -207,7 +212,7 @@ h2 {
  * Background section
  */
 .content-section {
-  padding: 3em 0;
+  padding: 2em 0;
   overflow-x: hidden;
   .action-button {
     padding: 50px 0 40px 0;
@@ -241,6 +246,7 @@ h2 {
     font-family: Montserrat;
     font-weight: 900;
     text-transform: uppercase;
+    margin: 10px 0;
       @include breakpoint($medium) {
           @media (min-width: 992px) {
           padding: 0;
@@ -248,6 +254,7 @@ h2 {
       }
   }
   .white-box {
+    margin: 2em 0;
     padding: 2em 2em 1em;
     background-color: $white;
     text-align: left;
@@ -267,7 +274,7 @@ h2 {
   padding-bottom: 40px;
   text-align: center;
   div div div { // quotes
-    margin-bottom: 4em;
+    margin-bottom: 8em;
     &:first-of-type {
       margin-top: 60px;
     }
@@ -467,9 +474,6 @@ h1 {
     font-family: 'Montserrat';
     font-weight: 900;
   }
-div a {
-    color: #233d23 !important;
-  }
 }
 
 p.letter {
@@ -494,6 +498,8 @@ p.tagline {
   background-color: $blue;
   h2 {
     color: $white;
+    margin-top: 30px;
+    text-align: center;
   }
 }
 .bg-black {
