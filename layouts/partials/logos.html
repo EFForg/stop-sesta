@@ -4,8 +4,14 @@
 
     {{ range $.Site.Data.logos.logos }}
 
+      {{ if .url }}
         <a href="{{ .url }}" class="{{ .class }}">
+      {{ end }}
           <img src="images/logos/{{ .logo }}" alt="{{ .name }}">
+
+      {{ if .url }}
+        </a>
+      {{ end }}
 
     {{ end }}
 

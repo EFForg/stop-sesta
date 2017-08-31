@@ -4,32 +4,27 @@ logos:
     logo: EFF-wide.png
     class: eff-logo
   - name: Center for Democracy & Technology
-    url: https://eff.org
     logo: cdt.png
-  - name: Electronic Frontier Foundation
-    url: https://eff.org
+  - name: Defending Rights & Dissent
     logo: defending.png
-  - name: Electronic Frontier Foundation
-    url: https://eff.org
-    logo: fight.png
-  - name: Electronic Frontier Foundation
-    url: https://eff.org
+  - name: Freedom of the Press Foundation
+    url: http://freedom.press
     logo: freedom-of-the-press.png
-  - name: Electronic Frontier Foundation
-    url: https://eff.org
+  - name: Internet Archive
+    url: https://archive.org
     logo: internet.png
-  - name: Electronic Frontier Foundation
-    url: https://eff.org
+  - name: Restore the Fourth
+    url: https://restorethe4th.com
     logo: restore.png
-  - name: Electronic Frontier Foundation
-    url: https://eff.org
+  - name: RootsAction
+    url: http://rootsaction.org
     logo: roots.png
-  - name: Electronic Frontier Foundation
-    url: https://eff.org
+  - name: R Street Institute
+    url: http://www.rstreet.org
     logo: rstreet.png
-  - name: Electronic Frontier Foundation
-    url: https://eff.org
+  - name: Woodhull Freedom Foundation
+    url: https://www.woodhullfoundation.org
     logo: woodhull.png
-  - name: Electronic Frontier Foundation
-    url: https://eff.org
+  - name: X-Lab
+    url: http://thexlab.org
     logo: x.png
