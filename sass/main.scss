@@ -157,6 +157,12 @@ h2 {
     position: relative;
     left: -60px;
   }
+  @include breakpoint($medium) {
+    img {
+      position: static;
+      left: 0;
+    }
+  }
   .action-button {
     padding: 50px 0 40px 0;
     width: 50%;
