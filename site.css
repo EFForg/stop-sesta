@@ -227,6 +227,10 @@ h2 {
     display: inline-block;
     position: relative;
     left: -60px; }
+  @media (min-width: 768px) {
+    .header-info img {
+      position: static;
+      left: 0; } }
   .header-info .action-button {
     padding: 50px 0 40px 0;
     width: 50%;
