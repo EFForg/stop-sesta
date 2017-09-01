@@ -152,15 +152,11 @@ h2 {
 
 .header-info {
   background-color: $blue;
-  img {
-    display: inline-block;
-    position: relative;
-    left: -60px;
-  }
   @include breakpoint($medium) {
     img {
-      position: static;
-      left: 0;
+      display: inline-block;
+      position: relative;
+      left: -60px;
     }
   }
   .action-button {
