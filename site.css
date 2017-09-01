@@ -223,14 +223,11 @@ h2 {
 
 .header-info {
   background-color: #00a9e7; }
-  .header-info img {
-    display: inline-block;
-    position: relative;
-    left: -60px; }
   @media (min-width: 768px) {
     .header-info img {
-      position: static;
-      left: 0; } }
+      display: inline-block;
+      position: relative;
+      left: -60px; } }
   .header-info .action-button {
     padding: 50px 0 40px 0;
     width: 50%;
