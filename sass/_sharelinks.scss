@@ -1,0 +1,172 @@
+@import 'breakpoint';
+
+$medium: 768px;
+$small: max-width 767px;
+
+/* social-icons-long-read.svg map */
+$social-icon-original-size: 74.7px;
+$social-icon-twitter-offset: 0px;
+$social-icon-facebook-offset: -91.4px;
+$social-icon-google-offset: -183.8px;
+$social-icon-clipboard-offset: -280.5px;
+
+$social-icon-desktop-size: 6rem;
+$social-icon-mobile-size: 6rem;
+$social-link-text-width: 12.5rem;
+
+/* We have to break a little before $narrow so that the links
+ * don't overlap on top of the long read content.
+*/
+$social-link-breakpoint: $small + 2*$social-icon-desktop-size * (16px/rem);
+
+@mixin share-links-container($icon-size) {
+  > a {
+    position: relative;
+    width: $icon-size;
+    height: $icon-size;
+    overflow: hidden;
+
+    &:hover {
+      background-color: transparent !important;
+    }
+
+    &:visited {
+    }
+
+    i {
+      position: relative;
+      display: inline-block;
+      height: $icon-size;
+      width: $icon-size;
+      z-index: 2;
+
+      background: url("../images/social-icons.svg") no-repeat;
+      background-color: $yellow;
+      background-size: $icon-size;
+    }
+
+    span {
+      position: absolute;
+      visibility: hidden;
+      display: inline-block;
+      top: 0;
+      right: 0;
+      z-index: 1;
+      opacity: 0.9;
+
+      width: $social-link-text-width;
+      height: $icon-size;
+      box-sizing: content-box;
+      line-height: $icon-size;
+      padding-left: $icon-size/5.7;
+
+      text-align: left;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+
+      background-color: $yellow;
+    }
+
+    &:first-child {
+      margin-top: 0;
+      margin-left: 0;
+    }
+
+    &.share-twitter i {
+      background-position: 0 ($icon-size/$social-icon-original-size)*$social-icon-twitter-offset;
+    }
+
+    &.share-facebook i {
+      background-position: 0 ($icon-size/$social-icon-original-size)*$social-icon-facebook-offset;
+    }
+
+    &.share-google i {
+      background-position: 0 ($icon-size/$social-icon-original-size)*$social-icon-google-offset;
+    }
+
+    &.share-clipboard i {
+      background-position: 0 ($icon-size/$social-icon-original-size)*$social-icon-clipboard-offset;
+    }
+
+    &.disabled {
+      display: none;
+    }
+  }
+}
+
+@mixin expanded-share-link($icon-size) {
+  i {
+    position: absolute;
+    left: 0;
+    z-index: 2;
+  }
+  width: 1.12*$icon-size + $social-link-text-width + $icon-size/5.7;
+  transition: width 130ms;
+
+  span {
+    visibility: visible;
+  }
+}
+
+
+.share-links.mobile {
+  @include share-links-container($social-icon-mobile-size);
+
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+
+  > a {
+    display: inline-block;
+    float: left;
+    margin-left: $social-icon-mobile-size/4;
+
+    &.share-clipboard {
+      display: none;
+    }
+  }
+}
+
+.share-links.desktop {
+  @include share-links-container($social-icon-desktop-size);
+
+  display: block;
+  position: absolute;
+  margin-top: 2.5rem; /* needs to match margin-bottom of .long-read .banner */
+  left: 0;
+  z-index: 3;
+  top: 100px;
+
+  &.stuck:not(.bottom) {
+    position: fixed;
+    top: 2.5rem;
+    margin-top: 0;
+  }
+
+  > a {
+    display: block;
+    margin-top: $social-icon-mobile-size/5.7;
+
+    &:hover, &:focus {
+      @include expanded-share-link($social-icon-desktop-size);
+    }
+  }
+}
+
+.share-links.mobile {
+  display: inline-block;
+  clear: both;
+}
+
+.share-links.desktop {
+  display: none;
+}
+
+@include breakpoint($medium) {
+  .share-links.mobile {
+    display: none;
+  }
+
+  .share-links.desktop {
+    display: block;
+  }
+}

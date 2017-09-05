@@ -12,7 +12,7 @@ $footer-color: #000;
 $medium: 768px;
 $small: max-width 767px;
 
-@import 'social-buttons';
+@import 'sharelinks';
 @import 'breakpoint';
 
 $cone-height: 40;
@@ -158,11 +158,17 @@ h2 {
 
 .header-info {
   background-color: $blue;
+  img {
+    display: inline-block;
+    position: relative;
+    left: 0px;
+  }
   @include breakpoint($medium) {
     img {
-      display: inline-block;
-      position: relative;
       left: -60px;
+    }
+    img:last-child {
+      margin-right: -60px;
     }
   }
   .action-button {
@@ -221,6 +227,7 @@ h2 {
  */
 .content-section {
   padding: 2em 0;
+  position: relative;
   overflow-x: hidden;
   .action-button {
     padding: 50px 0 40px 0;
@@ -262,7 +269,7 @@ h2 {
       }
   }
   .white-box {
-    margin: 2em 0;
+    margin: 2em;
     padding: 2em 2em 1em;
     background-color: $white;
     text-align: left;
@@ -525,6 +532,6 @@ p.tagline {
     }
   }
 
-h2.black-text {
+h2.black {
   color: $black;
 }
