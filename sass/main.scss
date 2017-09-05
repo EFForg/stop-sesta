@@ -144,9 +144,15 @@ h2 {
   font-weight: 400;
   letter-spacing: 0.01em;
   font-style: normal;
-  font-size: 1.95em;
+  font-size: 3.5em;
   @include breakpoint($medium) {
     font-size: 4em;
+  }
+  @media (max-width: 580px) {
+    font-size: 3em;
+  }
+  @media (max-width: 495px) {
+    font-size: 2.5em;
   }
 }
 
@@ -223,7 +229,7 @@ h2 {
       a {
         text-decoration: none;
           @include breakpoint($medium) {
-            font-size: 1.2em;
+            font-size: 1.5em;
           }
       }
   }
@@ -283,13 +289,12 @@ h2 {
     a {
       float: right;
       color: $white;
-      @include breakpoint($medium) {
-        padding-right: 4em;
-      }
       text-transform: uppercase;
       font-weight: 400;
       letter-spacing: 0.15em;
       font-size: 0.8em;
+      text-align: right;
+      width: 65%;
     }
   }
 
@@ -519,3 +524,7 @@ p.tagline {
       color: black;
     }
   }
+
+h2.black-text {
+  color: $black;
+}

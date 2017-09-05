@@ -5,6 +5,7 @@ logos:
     class: eff-logo
   - name: Center for Democracy & Technology
     logo: cdt.png
+    url: https://cdt.org
   - name: Defending Rights & Dissent
     url: https://rightsanddissent.org
     logo: defending.png
