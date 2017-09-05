@@ -216,10 +216,16 @@ h2 {
   font-weight: 400;
   letter-spacing: 0.01em;
   font-style: normal;
-  font-size: 1.95em; }
+  font-size: 3.5em; }
   @media (min-width: 768px) {
     h2 {
       font-size: 4em; } }
+  @media (max-width: 580px) {
+    h2 {
+      font-size: 3em; } }
+  @media (max-width: 495px) {
+    h2 {
+      font-size: 2.5em; } }
 
 .header-info {
   background-color: #00a9e7; }
@@ -283,7 +289,7 @@ h2 {
       text-decoration: none; }
       @media (min-width: 768px) {
         .content-section .action-button a {
-          font-size: 1.2em; } }
+          font-size: 1.5em; } }
   .content-section p {
     color: #000;
     font-style: normal;
@@ -332,10 +338,9 @@ h2 {
       text-transform: uppercase;
       font-weight: 400;
       letter-spacing: 0.15em;
-      font-size: 0.8em; }
-      @media (min-width: 768px) {
-        .quote-section div div div a {
-          padding-right: 4em; } }
+      font-size: 0.8em;
+      text-align: right;
+      width: 65%; }
   .quote-section p {
     font-size: 22px;
     font-weight: 300;
@@ -494,3 +499,6 @@ p.tagline {
     color: #00a9e7; }
   .bg-black a {
     color: black; }
+
+h2.black-text {
+  color: #000; }
