@@ -43,4 +43,20 @@ $(function(){
       }
     });
 
+    $( ".share-facebook" ).click(function() {
+      var url = $(this).attr("href");
+      window.open(url, "Share on Facebook", "width=650,height=500");
+      return false;
+    });
+    $( ".share-twitter" ).click(function() {
+        var url = $(this).attr("href");
+        window.open(url,"Twitter","width=550,height=420");
+        return false;
+    });
+    $( ".share-google" ).click(function() {
+        var url = $(this).attr("href");
+        window.open(url,"Share on Google Plus","width=500,height=436");
+        return false;
+    });
+
 });

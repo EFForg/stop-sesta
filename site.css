@@ -1,114 +1,146 @@
-#share-buttons {
-  height: 100px;
-  width: 100px;
+/* social-icons-long-read.svg map */
+/* We have to break a little before $narrow so that the links
+ * don't overlap on top of the long read content.
+*/
+.share-links.mobile {
+  margin-top: 2rem;
+  margin-bottom: 1rem; }
+  .share-links.mobile > a {
+    position: relative;
+    width: 6rem;
+    height: 6rem;
+    overflow: hidden; }
+    .share-links.mobile > a:hover {
+      background-color: transparent !important; }
+    .share-links.mobile > a i {
+      position: relative;
+      display: inline-block;
+      height: 6rem;
+      width: 6rem;
+      z-index: 2;
+      background: url("../images/social-icons.svg") no-repeat;
+      background-color: #ffd100;
+      background-size: 6rem; }
+    .share-links.mobile > a span {
+      position: absolute;
+      visibility: hidden;
+      display: inline-block;
+      top: 0;
+      right: 0;
+      z-index: 1;
+      opacity: 0.9;
+      width: 12.5rem;
+      height: 6rem;
+      box-sizing: content-box;
+      line-height: 6rem;
+      padding-left: 1.05263rem;
+      text-align: left;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      background-color: #ffd100; }
+    .share-links.mobile > a:first-child {
+      margin-top: 0;
+      margin-left: 0; }
+    .share-links.mobile > a.share-twitter i {
+      background-position: 0 0rem; }
+    .share-links.mobile > a.share-facebook i {
+      background-position: 0 -7.34137rem; }
+    .share-links.mobile > a.share-google i {
+      background-position: 0 -14.76305rem; }
+    .share-links.mobile > a.share-clipboard i {
+      background-position: 0 -22.53012rem; }
+    .share-links.mobile > a.disabled {
+      display: none; }
+  .share-links.mobile > a {
+    display: inline-block;
+    float: left;
+    margin-left: 1.5rem; }
+    .share-links.mobile > a.share-clipboard {
+      display: none; }
+
+.share-links.desktop {
+  display: block;
   position: absolute;
-  right: 0;
-  top: 30px; }
-  @media (max-width: 830px) {
-    #share-buttons {
-      right: -25px; } }
+  margin-top: 2.5rem;
+  /* needs to match margin-bottom of .long-read .banner */
+  left: 0;
+  z-index: 3;
+  top: 100px; }
+  .share-links.desktop > a {
+    position: relative;
+    width: 6rem;
+    height: 6rem;
+    overflow: hidden; }
+    .share-links.desktop > a:hover {
+      background-color: transparent !important; }
+    .share-links.desktop > a i {
+      position: relative;
+      display: inline-block;
+      height: 6rem;
+      width: 6rem;
+      z-index: 2;
+      background: url("../images/social-icons.svg") no-repeat;
+      background-color: #ffd100;
+      background-size: 6rem; }
+    .share-links.desktop > a span {
+      position: absolute;
+      visibility: hidden;
+      display: inline-block;
+      top: 0;
+      right: 0;
+      z-index: 1;
+      opacity: 0.9;
+      width: 12.5rem;
+      height: 6rem;
+      box-sizing: content-box;
+      line-height: 6rem;
+      padding-left: 1.05263rem;
+      text-align: left;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      background-color: #ffd100; }
+    .share-links.desktop > a:first-child {
+      margin-top: 0;
+      margin-left: 0; }
+    .share-links.desktop > a.share-twitter i {
+      background-position: 0 0rem; }
+    .share-links.desktop > a.share-facebook i {
+      background-position: 0 -7.34137rem; }
+    .share-links.desktop > a.share-google i {
+      background-position: 0 -14.76305rem; }
+    .share-links.desktop > a.share-clipboard i {
+      background-position: 0 -22.53012rem; }
+    .share-links.desktop > a.disabled {
+      display: none; }
+  .share-links.desktop.stuck:not(.bottom) {
+    position: fixed;
+    top: 2.5rem;
+    margin-top: 0; }
+  .share-links.desktop > a {
+    display: block;
+    margin-top: 1.05263rem; }
+    .share-links.desktop > a:hover, .share-links.desktop > a:focus {
+      width: 20.27263rem;
+      transition: width 130ms; }
+      .share-links.desktop > a:hover i, .share-links.desktop > a:focus i {
+        position: absolute;
+        left: 0;
+        z-index: 2; }
+      .share-links.desktop > a:hover span, .share-links.desktop > a:focus span {
+        visibility: visible; }
 
-#share-buttons a {
-  margin: 4px;
-  width: 54px;
-  height: 74px;
-  z-index: 0;
-  margin-top: 60px; }
-
-.sicon {
-  float: left;
-  width: 54px;
-  height: 54px;
-  background-color: transparent;
-  background-image: url("../images/social-icons.png");
-  background-repeat: no-repeat; }
-
-#share-buttons .sicon {
-  margin-top: 2px; }
-
-#sfb {
-  background-position: 0 -59px; }
-
-#stwit {
-  background-position: 50% 0; }
-
-#sgplus {
-  background-position: 0 -117px; }
-
-#semail {
-  background-position: 0 -175px; }
-
-#semail:hover, #sgplus:hover, #stwit:hover, #sfb:hover {
-  opacity: 0.9; }
-
-.social-count, .social-no-count {
+.share-links.mobile {
   display: inline-block;
-  position: relative; }
+  clear: both; }
 
-#share-buttons .social-no-count {
-  margin-top: 0; }
+.share-links.desktop {
+  display: none; }
 
-.social-count:after {
-  background: #fff;
-  border: 1px solid #efefef;
-  border-radius: 2px;
-  top: -40px;
-  color: #444;
-  content: attr(count);
-  display: block;
-  left: 0px;
-  width: 54px;
-  padding: 5px;
-  text-align: center;
-  position: absolute;
-  text-shadow: 0 1px 0 #000;
-  white-space: nowrap; }
-
-.social-count:before {
-  border: solid;
-  border: 1px solid #fff;
-  border-color: #111 transparent;
-  border-color: #fff transparent;
-  border-width: .4em .4em 0 .4em;
-  top: -9px;
-  content: "";
-  display: block;
-  left: 22px;
-  position: absolute; }
-
-.no-js #share-buttons a {
-  margin-top: 0 !important; }
-
-.no-js #share-buttons .social-count {
-  margin-bottom: 0 !important; }
-
-.no-js .social-count:after {
-  background: #fff;
-  border: 1px solid #efefef;
-  border-radius: 2px;
-  top: -40px;
-  color: #444;
-  content: attr(count);
-  display: none;
-  left: 0px;
-  width: 54px;
-  padding: 5px;
-  text-align: center;
-  position: absolute;
-  text-shadow: 0 1px 0 #000;
-  white-space: nowrap; }
-
-.no-js .social-count:before {
-  border: solid;
-  border: 1px solid #fff;
-  border-color: #111 transparent;
-  border-color: #fff transparent;
-  border-width: .4em .4em 0 .4em;
-  top: -4px;
-  content: "";
-  display: none;
-  left: 22px;
-  position: absolute; }
+@media (min-width: 768px) {
+  .share-links.mobile {
+    display: none; }
+  .share-links.desktop {
+    display: block; } }
 
 /*
  * Globals
@@ -229,11 +261,15 @@ h2 {
 
 .header-info {
   background-color: #00a9e7; }
+  .header-info img {
+    display: inline-block;
+    position: relative;
+    left: 0px; }
   @media (min-width: 768px) {
     .header-info img {
-      display: inline-block;
-      position: relative;
-      left: -60px; } }
+      left: -60px; }
+    .header-info img:last-child {
+      margin-right: -60px; } }
   .header-info .action-button {
     padding: 50px 0 40px 0;
     width: 50%;
@@ -280,6 +316,7 @@ h2 {
  */
 .content-section {
   padding: 2em 0;
+  position: relative;
   overflow-x: hidden; }
   .content-section .action-button {
     padding: 50px 0 40px 0;
@@ -314,7 +351,7 @@ h2 {
   .content-section h2 {
     padding: 0; } }
   .content-section .white-box {
-    margin: 2em 0;
+    margin: 2em;
     padding: 2em 2em 1em;
     background-color: #ffffff;
     text-align: left; }
@@ -500,5 +537,5 @@ p.tagline {
   .bg-black a {
     color: black; }
 
-h2.black-text {
+h2.black {
   color: #000; }
