@@ -36,7 +36,7 @@
       padding-left: 1.05263rem;
       text-align: left;
       text-transform: uppercase;
-      font-size: 1rem;
+      font-size: 1.2rem;
       background-color: #ffd100; }
     .share-links.mobile > a:first-child {
       margin-top: 0;
@@ -97,7 +97,7 @@
       padding-left: 1.05263rem;
       text-align: left;
       text-transform: uppercase;
-      font-size: 1rem;
+      font-size: 1.2rem;
       background-color: #ffd100; }
     .share-links.desktop > a:first-child {
       margin-top: 0;
@@ -330,14 +330,11 @@ h2 {
   .content-section p {
     color: #000;
     font-style: normal;
-    font-size: 14px;
     font-weight: 400;
     text-shadow: none;
     opacity: 1;
-    margin-bottom: 20px; }
-    @media (min-width: 768px) {
-      .content-section p {
-        font-size: 1.5em; } }
+    margin-bottom: 20px;
+    font-size: 1.5em; }
   .content-section b {
     font-weight: 900; }
   .content-section h2 {
@@ -357,7 +354,9 @@ h2 {
     text-align: left; }
   @media (max-width: 850px) {
     .content-section .white-box {
-      margin: 2em; } }
+      margin: 0px;
+      padding: 0px;
+      background-color: transparent; } }
 
 .action-embed iframe {
   height: 615px;
