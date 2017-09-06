@@ -134,7 +134,7 @@ $social-link-breakpoint: $small + 2*$social-icon-desktop-size * (16px/rem);
   margin-top: 2.5rem; /* needs to match margin-bottom of .long-read .banner */
   left: 0;
   z-index: 3;
-  top: 100px;
+  top: 112px;
 
   &.stuck:not(.bottom) {
     position: fixed;
