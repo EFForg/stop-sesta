@@ -21,6 +21,9 @@ logos:
   - name: Internet Archive
     url: https://archive.org
     logo: internet.png
+  - name: Open Media
+    url: https://openmedia.org/
+    logo: open-media.png
   - name: Restore the Fourth
     url: https://restorethe4th.com
     logo: restore.png
