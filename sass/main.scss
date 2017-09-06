@@ -290,22 +290,22 @@ h2 {
 
 .quote-section {
   text-shadow: none;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   text-align: center;
   div div div { // quotes
-    margin-bottom: 8em;
+    margin-bottom: 4em;
     &:first-of-type {
       margin-top: 60px;
     }
     a {
-      float: right;
       color: $white;
       text-transform: uppercase;
       font-weight: 400;
       letter-spacing: 0.15em;
       font-size: 0.8em;
       text-align: right;
-      width: 65%;
+      margin-left: 35%;
+      display: block;
     }
   }
 
