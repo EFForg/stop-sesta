@@ -269,10 +269,15 @@ h2 {
       }
   }
   .white-box {
-    margin: 2em;
+    margin: 2em 0;
     padding: 2em 2em 1em;
     background-color: $white;
     text-align: left;
+  }
+  @media (max-width: 850px) {
+    .white-box {
+      margin: 2em;
+    }
   }
 }
 
