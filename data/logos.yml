@@ -2,7 +2,11 @@ logos:
   - name: Electronic Frontier Foundation
     url: https://eff.org
     logo: EFF-wide.png
-    class: eff-logo
+    class: eff-logo hidden-xs hidden-sm
+  - name: Electronic Frontier Foundation
+    url: https://eff.org
+    logo: EFF-mobile.png
+    class: visible-xs visible-sm
   - name: Access Now
     logo: accessnow.png
     url: https://www.accessnow.org/
@@ -12,6 +16,9 @@ logos:
   - name: Defending Rights & Dissent
     url: https://rightsanddissent.org
     logo: defending.png
+  - name: Fight for the Future
+    url: https://www.fightforthefuture.org
+    logo: fight.png
   - name: FIRE
     url: https://www.thefire.org/
     logo: fire.png
