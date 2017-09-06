@@ -492,8 +492,9 @@ h2 {
   padding-right: 50px;
   min-width: 270px; }
 
-#take-action iframe {
-  overflow-x: scroll; }
+@media (max-width: 768px) {
+  #take-action iframe {
+    width: 100%; } }
 
 .codeblock {
   text-align: left !important;
