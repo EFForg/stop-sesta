@@ -29,7 +29,7 @@
       right: 0;
       z-index: 1;
       opacity: 0.9;
-      width: 12.5rem;
+      width: 14.7rem;
       height: 6rem;
       box-sizing: content-box;
       line-height: 6rem;
@@ -90,7 +90,7 @@
       right: 0;
       z-index: 1;
       opacity: 0.9;
-      width: 12.5rem;
+      width: 14.7rem;
       height: 6rem;
       box-sizing: content-box;
       line-height: 6rem;
@@ -120,7 +120,7 @@
     display: block;
     margin-top: 1.05263rem; }
     .share-links.desktop > a:hover, .share-links.desktop > a:focus {
-      width: 20.27263rem;
+      width: 22.47263rem;
       transition: width 130ms; }
       .share-links.desktop > a:hover i, .share-links.desktop > a:focus i {
         position: absolute;
