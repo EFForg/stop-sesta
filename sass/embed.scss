@@ -95,7 +95,7 @@
     background-color: transparent;
     outline: 0;
     color: #ff0000;
-    width: 86%;
+    width: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -109,15 +109,15 @@
     position: relative;
   }
   .tool form {
-      margin-left: 55%;
-      width: 46%;
+    /*  margin-left: 55%;
+      width: 46%; */
     #customize-message {
-      position: absolute;
+    /*  position: absolute;
       left: 0;
       top: 0;
-      width: 50%;
+      width: 50%; */
       textarea {
-        min-height: 400px;
+      /*  min-height: 400px; */
       }
     }
   }
