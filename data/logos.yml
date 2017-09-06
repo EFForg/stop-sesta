@@ -3,6 +3,9 @@ logos:
     url: https://eff.org
     logo: EFF-wide.png
     class: eff-logo
+  - name: Access Now
+    logo: accessnow.png
+    url: https://www.accessnow.org/
   - name: Center for Democracy & Technology
     logo: cdt.png
     url: https://cdt.org
