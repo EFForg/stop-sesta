@@ -18,7 +18,7 @@
       height: 6rem;
       width: 6rem;
       z-index: 2;
-      background: url("images/social-icons.svg") no-repeat;
+      background: url("https://stopsesta.global.ssl.fastly.net/images/social-icons.svg") no-repeat;
       background-color: #ffd100;
       background-size: 6rem; }
     .share-links.mobile > a span {
@@ -79,7 +79,7 @@
       height: 6rem;
       width: 6rem;
       z-index: 2;
-      background: url("images/social-icons.svg") no-repeat;
+      background: url("https://stopsesta.global.ssl.fastly.net/images/social-icons.svg") no-repeat;
       background-color: #ffd100;
       background-size: 6rem; }
     .share-links.desktop > a span {
