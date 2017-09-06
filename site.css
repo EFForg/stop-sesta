@@ -265,7 +265,7 @@ h2 {
     display: inline-block;
     position: relative;
     left: 0px; }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .header-info img {
       left: -60px; }
     .header-info img:last-child {
