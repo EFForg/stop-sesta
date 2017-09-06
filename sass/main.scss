@@ -10,7 +10,7 @@ $trans-blue: rgba(0,126,255,0.6);
 $footer-color: #000;
 
 $medium: 768px;
-$small: max-width 767px;
+$small: 767px;
 
 @import 'sharelinks';
 @import 'breakpoint';
@@ -163,7 +163,7 @@ h2 {
     position: relative;
     left: 0px;
   }
-  @include breakpoint($medium) {
+  @media (min-width: 1200px) {
     img {
       left: -60px;
     }
