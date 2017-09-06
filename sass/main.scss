@@ -243,14 +243,11 @@ h2 {
   p {
     color: #000;
     font-style: normal;
-    font-size: 14px;
     font-weight: 400;
     text-shadow: none;
     opacity: 1;
     margin-bottom:20px;
-    @include breakpoint($medium) {
-      font-size: 1.5em;
-    }
+    font-size: 1.5em;
   }
   b {
     font-weight: 900;
@@ -276,7 +273,9 @@ h2 {
   }
   @media (max-width: 850px) {
     .white-box {
-      margin: 2em;
+      margin: 0px;
+      padding: 0px;
+      background-color: transparent;
     }
   }
 }
