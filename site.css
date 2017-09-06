@@ -18,7 +18,7 @@
       height: 6rem;
       width: 6rem;
       z-index: 2;
-      background: url("../images/social-icons.svg") no-repeat;
+      background: url("images/social-icons.svg") no-repeat;
       background-color: #ffd100;
       background-size: 6rem; }
     .share-links.mobile > a span {
@@ -79,7 +79,7 @@
       height: 6rem;
       width: 6rem;
       z-index: 2;
-      background: url("../images/social-icons.svg") no-repeat;
+      background: url("images/social-icons.svg") no-repeat;
       background-color: #ffd100;
       background-size: 6rem; }
     .share-links.desktop > a span {
@@ -351,10 +351,13 @@ h2 {
   .content-section h2 {
     padding: 0; } }
   .content-section .white-box {
-    margin: 2em;
+    margin: 2em 0;
     padding: 2em 2em 1em;
     background-color: #ffffff;
     text-align: left; }
+  @media (max-width: 850px) {
+    .content-section .white-box {
+      margin: 2em; } }
 
 .action-embed iframe {
   height: 615px;
