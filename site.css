@@ -365,21 +365,21 @@ h2 {
 
 .quote-section {
   text-shadow: none;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   text-align: center; }
   .quote-section div div div {
-    margin-bottom: 8em; }
+    margin-bottom: 4em; }
     .quote-section div div div:first-of-type {
       margin-top: 60px; }
     .quote-section div div div a {
-      float: right;
       color: #ffffff;
       text-transform: uppercase;
       font-weight: 400;
       letter-spacing: 0.15em;
       font-size: 0.8em;
       text-align: right;
-      width: 65%; }
+      margin-left: 35%;
+      display: block; }
   .quote-section p {
     font-size: 22px;
     font-weight: 300;
