@@ -36,7 +36,7 @@
     box-shadow: none;
     background-color: transparent;
   }
-  #congress-message-tool {
+  #congress-message-tool, #call-tool {
     h3 em {
       background-color: transparent;
       text-transform: uppercase;
@@ -44,8 +44,12 @@
       font-weight: 700;
     }
     h3.privacy-notice-header em {
-      font-weight: bold;
-      font-size: 11px;
+        font-weight: bold;
+        font-size: 11px;
+        float: left;
+        margin-right: 5px;
+        line-height: 1.6em;
+        background-color: transparent;
     }
   }
   .description h3:before,
@@ -57,7 +61,8 @@
   }
 
 
-  #congress-message-tool textarea {
+  #congress-message-tool textarea,
+  #call-tool textarea {
     font-weight: normal;
     padding: 1em;
     font-size: 1em;
@@ -67,6 +72,9 @@
     background-color: #ffd100;
     color: #ff0000;
     border-color: #ff0000;
+  }
+  h3.privacy-notice-header span.privacy-notice-popover {
+    float: left;
   }
   #congress-message-tool h3 span.customize-message-popover:hover,
   h3.privacy-notice-header span.privacy-notice-popover:hover,
@@ -82,7 +90,9 @@
     font-weight: bold;
     font-size: 11px;
   }
-  #congress-message-tool input.action {
+  #congress-message-tool input.action,
+  #call-tool button.action {
+    clear: both;
     text-decoration: none;
     font-weight: 400;
     letter-spacing: 0.2em;
@@ -111,14 +121,8 @@
   .tool form {
     /*  margin-left: 55%;
       width: 46%; */
-    #customize-message {
-    /*  position: absolute;
-      left: 0;
-      top: 0;
-      width: 50%; */
-      textarea {
-      /*  min-height: 400px; */
-      }
+    #customize-message h3 {
+      margin-top: 10px;
     }
   }
 }
