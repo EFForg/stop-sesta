@@ -54,21 +54,26 @@
     border: none;
     box-shadow: none;
     background-color: transparent; }
-  #tools #congress-message-tool h3 em {
+  #tools #congress-message-tool h3 em, #tools #call-tool h3 em {
     background-color: transparent;
     text-transform: uppercase;
     color: black;
     font-weight: 700; }
-  #tools #congress-message-tool h3.privacy-notice-header em {
+  #tools #congress-message-tool h3.privacy-notice-header em, #tools #call-tool h3.privacy-notice-header em {
     font-weight: bold;
-    font-size: 11px; }
+    font-size: 11px;
+    float: left;
+    margin-right: 5px;
+    line-height: 1.6em;
+    background-color: transparent; }
   #tools .description h3:before,
   #tools h3.privacy-notice-header:before,
   #tools h3.header:before,
   #tools #email-tool h3:before,
   #tools #congress-message-tool h3:before {
     border-bottom: none; }
-  #tools #congress-message-tool textarea {
+  #tools #congress-message-tool textarea,
+  #tools #call-tool textarea {
     font-weight: normal;
     padding: 1em;
     font-size: 1em; }
@@ -77,6 +82,8 @@
     background-color: #ffd100;
     color: #ff0000;
     border-color: #ff0000; }
+  #tools h3.privacy-notice-header span.privacy-notice-popover {
+    float: left; }
   #tools #congress-message-tool h3 span.customize-message-popover:hover,
   #tools h3.privacy-notice-header span.privacy-notice-popover:hover,
   #tools h3.privacy-notice-header span.privacy-notice-popover:hover {
@@ -88,7 +95,9 @@
     text-transform: uppercase;
     font-weight: bold;
     font-size: 11px; }
-  #tools #congress-message-tool input.action {
+  #tools #congress-message-tool input.action,
+  #tools #call-tool button.action {
+    clear: both;
     text-decoration: none;
     font-weight: 400;
     letter-spacing: 0.2em;
@@ -105,7 +114,8 @@
     display: block;
     margin-left: auto;
     margin-right: auto; }
-    #tools #congress-message-tool input.action:hover {
+    #tools #congress-message-tool input.action:hover,
+    #tools #call-tool button.action:hover {
       background-color: #ff0000;
       border: 3px solid #ff0000;
       color: #ffd100; }
@@ -114,13 +124,8 @@
   #tools .tool form {
     /*  margin-left: 55%;
       width: 46%; */ }
-    #tools .tool form #customize-message {
-      /*  position: absolute;
-      left: 0;
-      top: 0;
-      width: 50%; */ }
-      #tools .tool form #customize-message textarea {
-        /*  min-height: 400px; */ }
+    #tools .tool form #customize-message h3 {
+      margin-top: 10px; }
 
 body.action_page-embed_iframe {
   background-color: transparent; }
@@ -271,6 +276,9 @@ which many things&#160;&#8212; including lawless behavior&#160;&#8212; come to l
 <h2>Act Now</h2>
 
 <a id="action-center-widget" href="https://act.eff.org/action/don-t-let-congress-censor-the-internet">Click here to take action.</a>
+
+<a id="action-center-widget" href="https://act.eff.org/action/california-restore-our-online-privacy-rights">Click here to take action.</a>
+
 
 
 <p>&nbsp;</p>
