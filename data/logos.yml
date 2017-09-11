@@ -13,6 +13,9 @@ logos:
   - name: Center for Democracy & Technology
     logo: cdt.png
     url: https://cdt.org
+  - name: Committee for Justice
+    logo: CFJ_preview.jpg
+    url: https://www.committeeforjustice.org
   - name: Defending Rights & Dissent
     url: https://rightsanddissent.org
     logo: defending.png
