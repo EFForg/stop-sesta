@@ -371,7 +371,7 @@ h2 {
     margin-bottom: 4em; }
     .quote-section div div div:first-of-type {
       margin-top: 60px; }
-    .quote-section div div div a, .quote-section div div div span {
+    .quote-section div div div a {
       color: #ffffff;
       text-transform: uppercase;
       font-weight: 400;
