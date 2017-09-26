@@ -16,12 +16,15 @@ logos:
   - name: Committee for Justice
     logo: CFJ_preview.jpg
     url: https://www.committeeforjustice.org
+  - name: Demand Progress
+    url: https://demandprogress.org
+    logo: demand-progress.png
   - name: Defending Rights & Dissent
     url: https://rightsanddissent.org
     logo: defending.png
   - name: Engine
     url: https://www.engine.is/
-    logo: engine.png    
+    logo: engine.png
   - name: Fight for the Future
     url: https://www.fightforthefuture.org
     logo: fight.png
@@ -34,6 +37,9 @@ logos:
   - name: Internet Archive
     url: https://archive.org
     logo: internet.png
+  - name: Open Technology Institute
+    url: https://www.newamerica.org/oti
+    logo: OTI.png
   - name: Open Media
     url: https://openmedia.org/
     logo: open-media.png
