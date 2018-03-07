@@ -90,29 +90,31 @@
     font-weight: bold;
     font-size: 11px;
   }
-  #congress-message-tool input.action,
-  #call-tool button.action {
-    clear: both;
-    text-decoration: none;
-    font-weight: 400;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    border: 3px solid #ff0000;
-    padding: 2px 15px;
-    font-weight: bold;
-    border-radius: 6px;
-    margin-top: 2em;
-    background-color: transparent;
-    outline: 0;
-    color: #ff0000;
-    width: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    &:hover {
-      background-color: #ff0000;
+  #congress-message-tool,
+  #call-tool {
+    button.action {
+      clear: both;
+      text-decoration: none;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
       border: 3px solid #ff0000;
-      color: #ffd100;
+      padding: 2px 15px;
+      font-weight: bold;
+      border-radius: 6px;
+      margin-top: 2em;
+      background-color: #ffd100;
+      outline: 0;
+      color: #ff0000;
+      width: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      &:hover {
+        background-color: #ff0000;
+        border: 3px solid #ff0000;
+        color: #ffd100;
+      }
     }
   }
   .tool .tool-body {
