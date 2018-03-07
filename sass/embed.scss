@@ -73,9 +73,6 @@
     color: #ff0000;
     border-color: #ff0000;
   }
-  h3.privacy-notice-header span.privacy-notice-popover {
-    float: left;
-  }
   #congress-message-tool h3 span.customize-message-popover:hover,
   h3.privacy-notice-header span.privacy-notice-popover:hover,
   h3.privacy-notice-header span.privacy-notice-popover:hover {
@@ -115,6 +112,10 @@
         border: 3px solid #ff0000;
         color: #ffd100;
       }
+    }
+    h3.privacy-notice-header span.privacy-notice-popover {
+      float: left;
+      margin-right: 3px;
     }
   }
   .tool .tool-body {
