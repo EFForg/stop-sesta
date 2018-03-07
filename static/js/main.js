@@ -30,6 +30,12 @@ $(function(){
       }, 600);
     });
 
+    $('a[href="#facts"]').click(function () {
+      $('html, body').animate({
+        scrollTop: $("#facts").offset().top - 20
+      }, 600);
+    });
+
     $('a[href="#top"]').click(function () {
       $('html, body').animate({
         scrollTop: $("#top").offset().top - 15
