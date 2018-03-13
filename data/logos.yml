@@ -13,6 +13,9 @@ logos:
   - name: Center for Democracy & Technology
     logo: cdt.png
     url: https://cdt.org
+  - name: Committee for Justice
+    logo: CFJ_preview.jpg
+    url: https://www.committeeforjustice.org
   - name: Demand Progress
     url: https://demandprogress.org
     logo: demand-progress.png
@@ -22,6 +25,9 @@ logos:
   - name: Engine
     url: https://www.engine.is/
     logo: engine.png
+  - name: Fight for the Future
+    url: https://www.fightforthefuture.org
+    logo: fight.png
   - name: FIRE
     url: https://www.thefire.org/
     logo: fire.png
@@ -37,18 +43,15 @@ logos:
   - name: Open Media
     url: https://openmedia.org/
     logo: open-media.png
+  - name: Restore the Fourth
+    url: https://restorethe4th.com
+    logo: restore.png
   - name: RootsAction
     url: http://rootsaction.org
     logo: roots.png
   - name: R Street Institute
     url: http://www.rstreet.org
     logo: rstreet.png
-  - name: Restore the Fourth
-    url: https://restorethe4th.com/
-    logo: restore.png
-  - name: Sex Workers Outreach Project
-    url: http://www.new.swopusa.org/
-    logo: swop.png
   - name: Woodhull Freedom Foundation
     url: https://www.woodhullfoundation.org
     logo: woodhull.png

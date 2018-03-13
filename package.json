@@ -5,7 +5,7 @@
   "scripts": {
     "clean": "rm -f static/*.js static/*.css",
     "sass:main": "node-sass sass/main.scss static/site.css",
-    "sass:embed": "node-sass sass/embed.scss static/embed.css",
+    "sass:embed": "node-sass sass/embed.scss layouts/partials/ac_embed_styles.html",
     "sass:build": "npm run sass:main && npm run sass:embed",
     "sass:watch": "onchange 'sass/*.scss*' -- npm run sass:build",
     "build:assets": "npm run clean && npm run sass:build",

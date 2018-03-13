@@ -226,7 +226,7 @@ h2 {
  * Background section
  */
 .content-section {
-  padding: 4em 0;
+  padding: 2em 0;
   position: relative;
   overflow-x: hidden;
   .action-button {
@@ -240,7 +240,7 @@ h2 {
           }
       }
   }
-  p, li {
+  p {
     color: #000;
     font-style: normal;
     font-weight: 400;
@@ -298,11 +298,11 @@ h2 {
       margin-top: 60px;
     }
     a, span {
-      color: black;
+      color: $white;
       text-transform: uppercase;
       font-weight: 400;
       letter-spacing: 0.15em;
-      font-size: 1em;
+      font-size: 0.8em;
       text-align: right;
       margin-left: 35%;
       display: block;
@@ -527,6 +527,7 @@ p.tagline {
   background-color: $blue;
   h2 {
     color: $white;
+    margin-top: 30px;
     text-align: center;
   }
 }
