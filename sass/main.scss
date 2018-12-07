@@ -544,6 +544,7 @@ p.tagline {
     color: $white;
   }
 }
+
 @media (max-width: 768px) {
   .bg-yellow {
     background-color: $white;
@@ -564,10 +565,10 @@ p.tagline {
 .bg-black {
     background-color: $black;
     h2 {
-      color: $blue;
+      color: $white;
     }
-    a {
-      color: black;
+    p, a, li {
+      color: $white;
     }
   }
 
