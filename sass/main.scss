@@ -1,7 +1,7 @@
 $black: #000;
 $blue: #00a9e7;
 $dark-red: #017e00;
-$red: #ff0000;
+$red: #c50000;
 $dark-red: #950002;
 $white: #ffffff;
 $yellow: #ffd100;
@@ -60,10 +60,10 @@ a:hover {
 .btn-default,
 .btn-default:hover,
 .btn-default:focus {
-  color: #333;
+  color: $red;
   text-shadow: none; /* Prevent inheritence from `body` */
   background-color: #fff;
-  border: 1px solid #fff;
+  border: 1px solid $red;
 }
 
 /*
@@ -132,11 +132,21 @@ body {
   background-color: transparent;
   outline: 0;
   width: 84%;
-  color: $red;
-  &:hover {
+  color: $white;
+  a {
+    color: $red;
+    text-decoration: none;
+    &:hover{
+      background-color: $red;
+      color: $white;
+    }
+  }
+  &:hover{
     background-color: $red;
-    border: 3px solid #{$red};
     color: $white;
+    a {
+      color: $white;
+    }
   }
 }
 
@@ -172,14 +182,21 @@ h2 {
     }
   }
   .action-button {
-    padding: 50px 0 40px 0;
+    //padding: 50px 0 40px 0;
     width: 50%;
     min-width: 14em;
       a {
         text-decoration: none;
+        text-transform: uppercase;
         padding: 15px;
+          span {
+            font-size: 1.5rem;
+          }
           @include breakpoint($medium) {
             font-size: 1.2em;
+            span {
+              font-size: 1.8rem;
+            }
           }
       }
   }
@@ -230,13 +247,17 @@ h2 {
   position: relative;
   overflow-x: hidden;
   .action-button {
-    padding: 50px 0 40px 0;
+    //padding: 50px 0 40px 0;
     width: 50%;
     min-width: 14em;
       a {
         text-decoration: none;
+        span.larger {
+          font-size: 1.5em;
+          line-height: 1em;
+        }
           @include breakpoint($medium) {
-            font-size: 1.5em;
+            font-size: 1.4em;
           }
       }
   }
@@ -523,6 +544,16 @@ p.tagline {
     color: $white;
   }
 }
+@media (max-width: 768px) {
+  .bg-yellow {
+    background-color: $white;
+    h2 {
+      color: $black;
+    }
+  }
+}
+
+
 .bg-blue {
   background-color: $blue;
   h2 {
