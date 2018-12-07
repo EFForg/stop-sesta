@@ -40,7 +40,7 @@ $social-link-breakpoint: $small + 2*$social-icon-desktop-size * (16px/rem);
       width: $icon-size;
       z-index: 2;
 
-      background: url("https://stopsesta.global.ssl.fastly.net/images/social-icons.svg") no-repeat;
+      background: url("images/social-icons.svg") no-repeat;
       background-color: $yellow;
       background-size: $icon-size;
     }
