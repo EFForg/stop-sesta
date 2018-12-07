@@ -425,25 +425,31 @@ h2 {
 
 .footer {
   background-color: $footer-color;
+  color: $white;
   padding: 20px 0;
   text-align: left;
   text-transform: uppercase;
-  font-size: 0.8em;
-  letter-spacing: 0.08em;
+  font-size: 1.3em;
 
+.footer-logo {
+  margin: 0 auto;
+  max-width: 80%;
+  a {
+    padding: 0;
+  }
+}
   img {
-
     margin: 0 2em;
 
     @include breakpoint($medium) {
       margin: 0 4em;
     }
 
-
   }
 
   a {
-    margin: 0 10px;
+    color: $white;
+    margin: 0 60px;
   }
   a:hover {
     text-decoration: underline;
