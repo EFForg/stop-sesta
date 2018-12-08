@@ -561,7 +561,7 @@ p.tagline {
 .bg-blue {
   background-color: $blue;
   h2 {
-    color: $white;
+    color: $black;
     text-align: center;
   }
 }
@@ -569,6 +569,7 @@ p.tagline {
   background-color: $black;
   h2 {
     color: $white;
+    text-align: center;
   }
   p, a, li {
     color: $white;
