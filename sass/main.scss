@@ -19,8 +19,8 @@ $cone-height: 40;
 $cone-angle: 40;
 
 /*
- * Globals
- */
+* Globals
+*/
 
 
 /* Montserrat */
@@ -67,8 +67,8 @@ a:hover {
 }
 
 /*
- * Base structure
- */
+* Base structure
+*/
 html,
 body {
   height: 100%;
@@ -82,18 +82,18 @@ body {
 
 
 /*
- * Navbar
- */
+* Navbar
+*/
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
   background-color: #000;
 }
- .navbar-inverse.visible {
+.navbar-inverse.visible {
   opacity: 1;
- }
- .navbar-inverse {
-   display: none;
-   background-color: #000;
- }
+}
+.navbar-inverse {
+  display: none;
+  background-color: #000;
+}
 
 .nav>li>a {
   letter-spacing: 0.1em;
@@ -118,7 +118,7 @@ body {
 
 // button
 
-  %button, .button {
+%button, .button {
   text-decoration: none;
   font-weight: 400;
   font-family: 'Montserrat';
@@ -185,20 +185,20 @@ h2 {
     //padding: 50px 0 40px 0;
     width: 50%;
     min-width: 14em;
-      a {
-        text-decoration: none;
-        text-transform: uppercase;
-        padding: 15px;
-          span {
-            font-size: 1.5rem;
-          }
-          @include breakpoint($medium) {
-            font-size: 1.2em;
-            span {
-              font-size: 1.8rem;
-            }
-          }
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 15px;
+      span {
+        font-size: 1.5rem;
       }
+      @include breakpoint($medium) {
+        font-size: 1.2em;
+        span {
+          font-size: 1.8rem;
+        }
+      }
+    }
   }
   p {
     color: #000;
@@ -224,14 +224,14 @@ h2 {
     font-weight: 900;
     font-size: 5em;
     text-transform: uppercase;
+    @media (min-width: 992px) {
+      color: $red;
+    }
+    @include breakpoint($medium) {
       @media (min-width: 992px) {
-        color: $red;
+        padding: 0;
       }
-      @include breakpoint($medium) {
-          @media (min-width: 992px) {
-          padding: 0;
-          }
-      }
+    }
   }
   h2 {
     font-size: 2em;
@@ -240,8 +240,8 @@ h2 {
 
 
 /*
- * Background section
- */
+* Background section
+*/
 .content-section {
   padding: 4em 0;
   position: relative;
@@ -250,16 +250,16 @@ h2 {
     //padding: 50px 0 40px 0;
     width: 50%;
     min-width: 14em;
-      a {
-        text-decoration: none;
-        span.larger {
-          font-size: 1.5em;
-          line-height: 1em;
-        }
-          @include breakpoint($medium) {
-            font-size: 1.4em;
-          }
+    a {
+      text-decoration: none;
+      span.larger {
+        font-size: 1.5em;
+        line-height: 1em;
       }
+      @include breakpoint($medium) {
+        font-size: 1.4em;
+      }
+    }
   }
   p, li {
     color: #000;
@@ -280,11 +280,11 @@ h2 {
     font-weight: 900;
     text-transform: uppercase;
     margin: 10px 0;
-      @include breakpoint($medium) {
-          @media (min-width: 992px) {
-          padding: 0;
-          }
+    @include breakpoint($medium) {
+      @media (min-width: 992px) {
+        padding: 0;
       }
+    }
   }
   .white-box {
     margin: 2em 0;
@@ -354,14 +354,8 @@ h2 {
       background-color: $trans-blue;
     }
     background-color: #007eff;
-    // &:hover {
-    //   background: $trans-blue;
-    //   // cursor: pointer;
-    //   border-color: $trans-blue;
-    // }
     display: block;
     border-radius: 5px;
-    //border: 1px solid rgba(0,0,0,0.3);
     height: 8em;
     margin-bottom: 1em;
 
@@ -372,9 +366,6 @@ h2 {
       }
     }
     img {
-      //display: block;
-      //float: left;
-      //padding: 1.5em;
       padding-top: 1.5em;
       width: 3em;
       height: auto;
@@ -412,7 +403,7 @@ h2 {
     display: block;
   }
   .eff-logo img {
-      width: 400px;
+    width: 400px;
   }
   ul li {
     list-style: none;
@@ -420,8 +411,8 @@ h2 {
 }
 
 /*
- * Footer
- */
+* Footer
+*/
 
 .footer {
   background-color: $footer-color;
@@ -429,38 +420,44 @@ h2 {
   padding: 20px 0;
   text-align: left;
   text-transform: uppercase;
-  font-size: 1.3em;
-
-.footer-logo {
-  margin: 0 auto;
-  max-width: 80%;
-  a {
-    padding: 0;
+  font-size: 0.8em;
+  @include breakpoint($medium) {
+    font-size: 1.3em;
   }
-}
+
+
+  .footer-logo {
+    margin: 0 auto;
+    max-width: 100%;
+    @include breakpoint($medium) {
+      max-width: 70%;
+    }
+    a {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
   img {
     margin: 0 2em;
-
-    @include breakpoint($medium) {
-      margin: 0 4em;
-    }
-
   }
 
   a {
     color: $white;
-    margin: 0 60px;
+    margin: 0 10px;
+    @include breakpoint($medium) {
+      margin: 0 60px;
+    }
   }
   a:hover {
     text-decoration: underline;
   }
-
 }
 
 
 /*
- * Affix and center
- */
+* Affix and center
+*/
 
 @media (min-width: 768px) {
   /* Pull out the header and footer */
@@ -569,14 +566,14 @@ p.tagline {
   }
 }
 .bg-black {
-    background-color: $black;
-    h2 {
-      color: $white;
-    }
-    p, a, li {
-      color: $white;
-    }
+  background-color: $black;
+  h2 {
+    color: $white;
   }
+  p, a, li {
+    color: $white;
+  }
+}
 
 h2.black {
   color: $black;
