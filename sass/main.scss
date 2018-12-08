@@ -1,5 +1,6 @@
 $black: #000;
 $blue: #00a9e7;
+$lighter-blue: #00c6ff;
 $dark-red: #017e00;
 $red: #c50000;
 $dark-red: #950002;
@@ -559,7 +560,7 @@ p.tagline {
 
 
 .bg-blue {
-  background-color: $blue;
+  background-color: $lighter-blue;
   h2 {
     color: $black;
     text-align: center;
