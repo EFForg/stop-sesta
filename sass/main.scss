@@ -170,9 +170,13 @@ h2 {
 .header-info {
   background-color: $blue;
   img {
+    border-bottom: 2em solid $blue;
     display: inline-block;
     position: relative;
     left: 0px;
+    @include breakpoint($medium) {
+      border-bottom: none;
+    }
   }
   @media (min-width: 1200px) {
     img {
