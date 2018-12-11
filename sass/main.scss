@@ -431,7 +431,7 @@ h2 {
     margin: 0 auto;
     max-width: 100%;
     @include breakpoint($medium) {
-      max-width: 70%;
+      max-width: 50%;
     }
     a {
       margin: 0;
