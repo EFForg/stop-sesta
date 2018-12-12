@@ -189,7 +189,6 @@ h2 {
     }
   }
   .action-button {
-    //padding: 50px 0 40px 0;
     width: 50%;
     min-width: 14em;
     a {
@@ -248,7 +247,7 @@ h2 {
 /* main container, boostrap override */
 .container {
   @media (max-width: 495px) {
-    padding: 0;
+    padding: 0 5px 0 0;
   }
 }
 
@@ -260,7 +259,6 @@ h2 {
   position: relative;
   overflow-x: hidden;
   .action-button {
-    //padding: 50px 0 40px 0;
     width: 50%;
     min-width: 14em;
     a {
@@ -295,11 +293,14 @@ h2 {
     font-family: Montserrat;
     font-weight: 900;
     text-transform: uppercase;
-    margin: 10px 0;
+    margin: 10px 0 35px;
     @include breakpoint($medium) {
       @media (min-width: 992px) {
         padding: 0;
       }
+    }
+    @media (max-width: 495px) {
+      margin: 10px 0;
     }
   }
   .white-box {
@@ -314,6 +315,9 @@ h2 {
       padding: 0px;
       background-color: transparent;
     }
+  }
+  @media (max-width: 495px) {
+    padding: 2em 0;
   }
 }
 
@@ -461,7 +465,7 @@ h2 {
   }
 
   img {
-    margin: 0 2em;
+    margin: 0 2em 2em;
   }
 
   a {
@@ -557,7 +561,7 @@ p.letter {
 
 .action-button {
   min-width: 270px !important;
-  margin: 0 auto !important;
+  margin: 3em auto !important;
   text-align: center;
 }
 p.tagline {
