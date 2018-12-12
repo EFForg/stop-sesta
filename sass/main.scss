@@ -352,6 +352,10 @@ h2 {
       text-align: right;
       margin-left: 35%;
       display: block;
+      @media (max-width: 495px) {
+        letter-spacing: normal;
+        margin-left: 5%;
+      }
     }
   }
 
