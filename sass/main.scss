@@ -164,7 +164,7 @@ h2 {
   }
   @media (max-width: 495px) {
     color: $black;
-    font-size: 1.8em;
+    font-size: 1.7em;
     letter-spacing: normal;
   }
 }
@@ -282,6 +282,9 @@ h2 {
     opacity: 1;
     margin-bottom:20px;
     font-size: 1.5em;
+    @media (max-width: 495px) {
+      font-size: 1.2em;
+    }
   }
   b {
     font-weight: 900;
@@ -350,6 +353,9 @@ h2 {
     font-size: 22px;
     font-weight: 300;
     line-height: 27px;
+    @media (max-width: 495px) {
+      font-size: 1.2em;
+    }
   }
 
 }
