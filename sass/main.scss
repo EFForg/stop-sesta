@@ -1,3 +1,7 @@
+// TODO:  Please note: some of this sass is messy, especially
+// around media queries and breakpoints. If another iteration of changes
+// happens after 12/2018, perhaps that should be cleaned up.
+// -- LHS
 $black: #000;
 $blue: #00a9e7;
 $lighter-blue: #00c6ff;
@@ -99,9 +103,14 @@ body {
 
 .nav>li>a {
   letter-spacing: 0.1em;
+  text-decoration: none;
   text-transform: uppercase;
   font-family: Montserrat;
   font-weight: 700;
+  @media (max-width: 835px) {
+    font-size: 16px;
+  }
+
 }
 .navbar-inverse .navbar-brand {
   color: #fff;
@@ -111,11 +120,17 @@ body {
   font-family: Montserrat;
   font-weight: 700;
   text-decoration: none;
+  @media (max-width: 835px) {
+    font-size: 16px;
+  }
 }
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>li>a {
   color: $blue;
   background-color: #000;
   font-size: 17px;
+  @media (max-width: 835px) {
+    font-size: 16px;
+  }
 }
 
 
@@ -261,8 +276,12 @@ h2 {
   position: relative;
   overflow-x: hidden;
   .action-button {
+    background: $white;
     width: 50%;
     min-width: 14em;
+    &:hover {
+      background: $red;
+    }
     a {
       text-decoration: none;
       span.larger {
@@ -477,8 +496,9 @@ h2 {
   a {
     color: $white;
     margin: 0 10px;
+    text-decoration: none;
     @include breakpoint($medium) {
-      margin: 0 60px;
+      margin: 0 56px;
     }
   }
   a:hover {
