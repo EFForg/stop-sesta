@@ -1,7 +1,12 @@
+// TODO:  Please note: some of this sass is messy, especially
+// around media queries and breakpoints. If another iteration of changes
+// happens after 12/2018, perhaps that should be cleaned up.
+// -- LHS
 $black: #000;
 $blue: #00a9e7;
+$lighter-blue: #00c6ff;
 $dark-red: #017e00;
-$red: #ff0000;
+$red: #c50000;
 $dark-red: #950002;
 $white: #ffffff;
 $yellow: #ffd100;
@@ -19,8 +24,8 @@ $cone-height: 40;
 $cone-angle: 40;
 
 /*
- * Globals
- */
+* Globals
+*/
 
 
 /* Montserrat */
@@ -54,21 +59,22 @@ a,
 a:focus,
 a:hover {
   color: $red;
+  text-decoration: underline;
 }
 
 /* Custom default button */
 .btn-default,
 .btn-default:hover,
 .btn-default:focus {
-  color: #333;
+  color: $red;
   text-shadow: none; /* Prevent inheritence from `body` */
   background-color: #fff;
-  border: 1px solid #fff;
+  border: 1px solid $red;
 }
 
 /*
- * Base structure
- */
+* Base structure
+*/
 html,
 body {
   height: 100%;
@@ -82,24 +88,29 @@ body {
 
 
 /*
- * Navbar
- */
+* Navbar
+*/
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
   background-color: #000;
 }
- .navbar-inverse.visible {
+.navbar-inverse.visible {
   opacity: 1;
- }
- .navbar-inverse {
-   display: none;
-   background-color: #000;
- }
+}
+.navbar-inverse {
+  display: none;
+  background-color: #000;
+}
 
 .nav>li>a {
   letter-spacing: 0.1em;
+  text-decoration: none;
   text-transform: uppercase;
   font-family: Montserrat;
   font-weight: 700;
+  @media (max-width: 835px) {
+    font-size: 16px;
+  }
+
 }
 .navbar-inverse .navbar-brand {
   color: #fff;
@@ -108,17 +119,24 @@ body {
   font-size: 17px;
   font-family: Montserrat;
   font-weight: 700;
+  text-decoration: none;
+  @media (max-width: 835px) {
+    font-size: 16px;
+  }
 }
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>li>a {
   color: $blue;
   background-color: #000;
   font-size: 17px;
+  @media (max-width: 835px) {
+    font-size: 16px;
+  }
 }
 
 
 // button
 
-  %button, .button {
+%button, .button {
   text-decoration: none;
   font-weight: 400;
   font-family: 'Montserrat';
@@ -132,11 +150,21 @@ body {
   background-color: transparent;
   outline: 0;
   width: 84%;
-  color: $red;
-  &:hover {
+  color: $white;
+  a {
+    color: $red;
+    text-decoration: none;
+    &:hover{
+      background-color: $red;
+      color: $white;
+    }
+  }
+  &:hover{
     background-color: $red;
-    border: 3px solid #{$red};
     color: $white;
+    a {
+      color: $white;
+    }
   }
 }
 
@@ -152,16 +180,22 @@ h2 {
     font-size: 3em;
   }
   @media (max-width: 495px) {
-    font-size: 2.5em;
+    color: $black;
+    font-size: 1.7em;
+    letter-spacing: normal;
   }
 }
 
 .header-info {
   background-color: $blue;
   img {
+    border-bottom: 2em solid $blue;
     display: inline-block;
     position: relative;
     left: 0px;
+    @include breakpoint($medium) {
+      border-bottom: none;
+    }
   }
   @media (min-width: 1200px) {
     img {
@@ -172,16 +206,22 @@ h2 {
     }
   }
   .action-button {
-    padding: 50px 0 40px 0;
     width: 50%;
     min-width: 14em;
-      a {
-        text-decoration: none;
-        padding: 15px;
-          @include breakpoint($medium) {
-            font-size: 1.2em;
-          }
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 15px;
+      span {
+        font-size: 1.5rem;
       }
+      @include breakpoint($medium) {
+        font-size: 1.2em;
+        span {
+          font-size: 1.8rem;
+        }
+      }
+    }
   }
   p {
     color: #000;
@@ -207,38 +247,51 @@ h2 {
     font-weight: 900;
     font-size: 5em;
     text-transform: uppercase;
+    @media (min-width: 992px) {
+      color: $red;
+    }
+    @include breakpoint($medium) {
       @media (min-width: 992px) {
-        color: $red;
+        padding: 0;
       }
-      @include breakpoint($medium) {
-          @media (min-width: 992px) {
-          padding: 0;
-          }
-      }
+    }
   }
   h2 {
     font-size: 2em;
   }
 }
 
+/* main container, boostrap override */
+.container {
+  @media (max-width: 495px) {
+    padding: 0 0 0 5px;
+  }
+}
 
 /*
- * Background section
- */
+* Background section
+*/
 .content-section {
   padding: 4em 0;
   position: relative;
   overflow-x: hidden;
   .action-button {
-    padding: 50px 0 40px 0;
+    background: $white;
     width: 50%;
     min-width: 14em;
-      a {
-        text-decoration: none;
-          @include breakpoint($medium) {
-            font-size: 1.5em;
-          }
+    &:hover {
+      background: $red;
+    }
+    a {
+      text-decoration: none;
+      span.larger {
+        font-size: 1.5em;
+        line-height: 1em;
       }
+      @include breakpoint($medium) {
+        font-size: 1.4em;
+      }
+    }
   }
   p, li {
     color: #000;
@@ -248,6 +301,9 @@ h2 {
     opacity: 1;
     margin-bottom:20px;
     font-size: 1.5em;
+    @media (max-width: 495px) {
+      font-size: 1.2em;
+    }
   }
   b {
     font-weight: 900;
@@ -258,12 +314,15 @@ h2 {
     font-family: Montserrat;
     font-weight: 900;
     text-transform: uppercase;
-    margin: 10px 0;
-      @include breakpoint($medium) {
-          @media (min-width: 992px) {
-          padding: 0;
-          }
+    margin: 10px 0 35px;
+    @include breakpoint($medium) {
+      @media (min-width: 992px) {
+        padding: 0;
       }
+    }
+    @media (max-width: 495px) {
+      margin: 10px 0;
+    }
   }
   .white-box {
     margin: 2em 0;
@@ -277,6 +336,9 @@ h2 {
       padding: 0px;
       background-color: transparent;
     }
+  }
+  @media (max-width: 495px) {
+    padding: 2em 0;
   }
 }
 
@@ -296,6 +358,9 @@ h2 {
     margin-bottom: 4em;
     &:first-of-type {
       margin-top: 60px;
+      @media (max-width: 495px) {
+        margin-top: 20px;
+      }
     }
     a, span {
       color: black;
@@ -306,6 +371,10 @@ h2 {
       text-align: right;
       margin-left: 35%;
       display: block;
+      @media (max-width: 495px) {
+        letter-spacing: normal;
+        margin-left: 5%;
+      }
     }
   }
 
@@ -313,6 +382,9 @@ h2 {
     font-size: 22px;
     font-weight: 300;
     line-height: 27px;
+    @media (max-width: 495px) {
+      font-size: 1.2em;
+    }
   }
 
 }
@@ -333,14 +405,8 @@ h2 {
       background-color: $trans-blue;
     }
     background-color: #007eff;
-    // &:hover {
-    //   background: $trans-blue;
-    //   // cursor: pointer;
-    //   border-color: $trans-blue;
-    // }
     display: block;
     border-radius: 5px;
-    //border: 1px solid rgba(0,0,0,0.3);
     height: 8em;
     margin-bottom: 1em;
 
@@ -351,9 +417,6 @@ h2 {
       }
     }
     img {
-      //display: block;
-      //float: left;
-      //padding: 1.5em;
       padding-top: 1.5em;
       width: 3em;
       height: auto;
@@ -391,7 +454,7 @@ h2 {
     display: block;
   }
   .eff-logo img {
-      width: 400px;
+    width: 400px;
   }
   ul li {
     list-style: none;
@@ -399,41 +462,54 @@ h2 {
 }
 
 /*
- * Footer
- */
+* Footer
+*/
 
 .footer {
   background-color: $footer-color;
+  color: $white;
   padding: 20px 0;
   text-align: left;
   text-transform: uppercase;
   font-size: 0.8em;
-  letter-spacing: 0.08em;
+  @include breakpoint($medium) {
+    font-size: 1.3em;
+  }
+
+
+  .footer-logo {
+    margin: 0 auto;
+    max-width: 100%;
+    @include breakpoint($medium) {
+      max-width: 50%;
+    }
+    a {
+      margin: 0;
+      padding: 0;
+    }
+  }
 
   img {
-
-    margin: 0 2em;
-
-    @include breakpoint($medium) {
-      margin: 0 4em;
-    }
-
-
+    margin: 0 2em 2em;
   }
 
   a {
+    color: $white;
     margin: 0 10px;
+    text-decoration: none;
+    @include breakpoint($medium) {
+      margin: 0 56px;
+    }
   }
   a:hover {
     text-decoration: underline;
   }
-
 }
 
 
 /*
- * Affix and center
- */
+* Affix and center
+*/
 
 @media (min-width: 768px) {
   /* Pull out the header and footer */
@@ -511,7 +587,7 @@ p.letter {
 
 .action-button {
   min-width: 270px !important;
-  margin: 0 auto !important;
+  margin: 3em auto !important;
   text-align: center;
 }
 p.tagline {
@@ -523,22 +599,34 @@ p.tagline {
     color: $white;
   }
 }
+
+@media (max-width: 768px) {
+  .bg-yellow {
+    background-color: $white;
+    h2 {
+      color: $black;
+    }
+  }
+}
+
+
 .bg-blue {
-  background-color: $blue;
+  background-color: $lighter-blue;
   h2 {
-    color: $white;
+    color: $black;
     text-align: center;
   }
 }
 .bg-black {
-    background-color: $black;
-    h2 {
-      color: $blue;
-    }
-    a {
-      color: black;
-    }
+  background-color: $black;
+  h2 {
+    color: $white;
+    text-align: center;
   }
+  p, a, li {
+    color: $white;
+  }
+}
 
 h2.black {
   color: $black;
