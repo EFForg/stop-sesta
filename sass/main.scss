@@ -10,6 +10,7 @@ $red: #c50000;
 $dark-red: #950002;
 $white: #ffffff;
 $yellow: #ffd100;
+$gray: #555;
 
 $trans-blue: rgba(0,126,255,0.6);
 $footer-color: #000;
@@ -19,6 +20,7 @@ $small: 767px;
 
 @import 'sharelinks';
 @import 'breakpoint';
+@import 'deeplinks';
 
 $cone-height: 40;
 $cone-angle: 40;
