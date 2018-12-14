@@ -49,7 +49,7 @@ $(function(){
                                          "html": shorten_post(post_blurb) }));
       post_div.append(post_title_div);
 
-      $('#deeplinks-posts').append(post_div);
+      $('#deeplinks').append(post_div);
     });
   });
 });
