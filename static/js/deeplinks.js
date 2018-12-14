@@ -6,6 +6,7 @@ $(function(){
     $(feed).find("item").slice(0, 5).each(function() {
       var post = $(this);
       var post_div = $("<div>", { "class": "deeplinks row" });
+      var post_url = post.find("link").text();
 
       // Get the post's banner image, or select a default
       var img_url = post.find("enclosure").attr('url');
@@ -24,6 +25,7 @@ $(function(){
       post_thumb = $("<div>",
                      { "class": "deeplinks-thumb col-sm-3" }).append(post_img);
       post_div.append(post_thumb);
+      post_img.wrap('<a href="' + post_url + '"></a>');
 
       var post_title_div = $("<div>", { "class": "deeplinks-post col-sm-9" });
 
@@ -42,7 +44,7 @@ $(function(){
       // Post title
       post_title_div.append($("<a>", { "class": "title",
                                        "html": post.find("title").text(),
-                                       "href": post.find("link").text() }));
+                                       "href": post_url }));
       // Post text
       var post_blurb = post.find("description").text();
       post_title_div.append($("<div>", { "class": "deeplinks-blurb",
