@@ -1,0 +1,62 @@
+div.deeplinks {
+  display: flex;
+  align-items: top;
+  margin-bottom: 2em;
+  text-align: left;
+  @media (max-width: $medium) {
+    margin-bottom: 1.5em;
+    padding: 0 10px;
+    line-height: 1.1;
+  }
+
+  a {
+    color: $black;
+    text-decoration: underline;
+  }
+
+  a.title {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 1.2;
+    @media (max-width: $medium) {
+      font-size: 18px;
+      line-height: 1.1;
+    }
+  }
+}
+
+.deeplinks-blurb {
+  color: $black;
+  font-size: 14px;
+  @media (max-width: $medium) {
+    display: none;
+  }
+}
+
+img.deeplinks-thumb {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  @media (max-width: $medium) {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+div.deeplinks-thumb {
+  text-align: center;
+  @media (max-width: $medium) {
+    padding: 0 0 0 5px;
+  }
+}
+
+.deeplinks-byline {
+  font-weight: bold;
+  color: $gray;
+  line-height: 1;
+  @media (max-width: $medium) {
+    font-weight: normal;
+    font-size: 12px;
+  }
+}
