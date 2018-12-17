@@ -16,7 +16,18 @@
 
 ## Build a release
 
+We deploy from `build` branch, which should contain only the build of the site.
 
+```
+git checkout master
+npm run-script build
+git checkout build
+rm -r layouts node_modules static
+cp -r public/* .
+rm -r public
+git add -A
+git commit -m "Your release message here"
+```
 
 (We tried using Travis for this but were not able to grant it granular enough access.)
 
