@@ -14,6 +14,12 @@
 1. `npm start` to start the local server.
 2. Visit `localhost:1313` in your browser.
 
+## Build a release
+
+
+
+(We tried using Travis for this but were not able to grant it granular enough access.)
+
 ## Editing the site
 
 ### Most of the HTML
