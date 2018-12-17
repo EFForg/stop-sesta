@@ -1,3 +1,5 @@
+# We tried to automate pushing the build to a branch using Travis
+# But we didn't want to give Travis access to all our Github repos
 language: node_js
 node_js:
   - "node"
