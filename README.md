@@ -14,22 +14,6 @@
 1. `npm start` to start the local server.
 2. Visit `localhost:1313` in your browser.
 
-## Build a release
-
-We deploy from the `build` branch, which should contain only the build of the site.
-
-```
-git checkout master
-npm run-script build
-git checkout build
-rm -r layouts node_modules static
-mv public/* .
-git add -A
-git commit -m "Your release message here"
-```
-
-(We tried using Travis for this but were not able to grant it granular enough access.)
-
 ## Editing the site
 
 ### Most of the HTML
