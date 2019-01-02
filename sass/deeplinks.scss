@@ -38,7 +38,7 @@ img.deeplinks-thumb {
   object-fit: cover;
   width: 200px;
   height: 200px;
-  @media (max-width: $medium) {
+  @media (max-width: 1023px) {
     width: 100px;
     height: 100px;
   }
