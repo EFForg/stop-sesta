@@ -176,7 +176,7 @@ img.deeplinks-thumb {
   object-fit: cover;
   width: 200px;
   height: 200px; }
-  @media (max-width: 768px) {
+  @media (max-width: 1023px) {
     img.deeplinks-thumb {
       width: 100px;
       height: 100px; } }
